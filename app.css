@@ -1,0 +1,342 @@
+/*** Grid ***/
+/*** Style ***/
+ul.menu {
+  list-style-type: none;
+  margin-left: 0;
+  padding-left: 0;
+  /* menu font size for mobile */
+  font-size: 27px; }
+  @media only screen and (min-width: 64.063em) {
+    ul.menu {
+      /*main menu primary level font size*/
+      font-size: 15px; } }
+  ul.menu ul {
+    list-style-type: none;
+    padding-left: 2px; 
+	font-size: 15px; }
+  ul.menu a {
+    color: black;
+    text-decoration: none; }
+    ul.menu a.active {
+      text-decoration: underline; }
+  ul.menu a:hover {
+	color: #ff0000;
+	font-size: inherit;
+}
+  ul.menu .series {
+    /* a link to series (under "Works" category) font size for mobile */
+    font-size: 15px;
+    font-weight: bold; }
+
+.menu-trigger {
+  padding-bottom: 66px;
+  line-height: 44px;
+  /* A "Menu" label displayed on all mobile sites */
+  font-size: 44px;
+  text-align: right; 
+  padding-left: 40px;}
+
+ol.gallery {
+  margin-left: 0;
+  list-style-type: none;
+  /* Gallery main font size */
+  font-size: 44px; }
+  @media only screen and (min-width: 64.063em) {
+    ol.gallery span.year {
+      display: block;
+      /* Year label font size for desktops */
+      font-size: 15px;
+      line-height: 27px;
+	  font-weight: bold;
+      padding-bottom: calc(42px - 19px); } }
+  @media only screen and (min-width: 64.063em) {
+    ol.gallery li:not(:first-child) {
+      margin-top: 50px; } }
+
+.gallery-images {
+  display: none; }
+  @media only screen and (min-width: 64.063em) {
+    .gallery-images {
+      display: block; } }
+  .gallery-images img {
+    height: 150px; }
+  .gallery-images a {
+    display: inline-block;
+    margin-bottom: 40px; }
+    .gallery-images a:not(:last-child) {
+      margin-right: 35px; }
+
+.by-series p {
+  /* description font size for mobile */
+  font-size: 15px; }
+.by-series section h1 {
+  /* long description font size for mobile */
+  font-size: 27px;
+  line-height: 27px;
+  padding-bottom: 27px;
+  font-family: inherit; 
+  font-weight: bold; }
+.by-series section h2 {
+  /* long description font size for mobile */
+  font-size: 21px;
+  line-height: 21px;
+  padding-top: 50px;
+  padding-bottom: calc(42px - 19px);
+  font-family: inherit; 
+  font-weight: bold; }
+
+.year {
+  /* Year label font size for mobile */
+  font-size: 44px;
+  padding-bottom: calc(90px - 52px);
+  line-height: 44px; }
+  @media only screen and (min-width: 64.063em) {
+    .year {
+      /* and desktop */
+      font-size: 19px;
+      line-height: 27px;
+      padding-bottom: calc(42px - 19px);
+	  font-weight: bolder; }
+      .year .description {
+        /* description font size for desktop */
+        font-size: 19px; } }
+
+.navigation-controls:not(.dark-button-enabled).next,
+.year ~ div.cell {
+  width: 150px; }
+
+.painting.menu-wrapper .menu-trigger {
+  padding-bottom: calc(90px - 52px); }
+
+.navigation-controls {
+  /* "<" and ">" buttons font size on mobile */
+  font-size: 52px;
+  line-height: 52px;
+  padding-bottom: calc(65px - 52px); }
+  .navigation-controls .next {
+    text-align: right; }
+  .navigation-controls a {
+    display: block;
+    width: 100%;
+    color: black; }
+
+.painting {
+  margin-bottom: 80px; }
+  @media only screen and (min-width: 64.063em) {
+    .painting {
+      margin-bottom: 60px; } }
+  .painting, .painting img {
+    width: 100%;
+    max-width: 540px; }
+    @media only screen and (min-width: 64.063em) {
+      .painting, .painting img {
+        max-width: 630px; } }
+  .painting img {
+    margin-bottom: 65px; }
+    @media only screen and (min-width: 64.063em) {
+      .painting img {
+        margin-bottom: 0px; } }
+  .painting p {
+    /* description font size */
+    font-size: 24px; }
+
+/* "See in dark" button */
+.toggle-dark {
+  vertical-align: middle;
+  border-style: none;
+  padding: 0;
+  background-color: transparent;
+  margin: 0;
+  color: black;
+  width: 100%;
+  /* button font size for mobile */
+  font-size: 52px;
+  line-height: 52px; }
+  .toggle-dark:hover, .toggle-dark:focus, .toggle-dark:active {
+    background-color: transparent;
+    outline: none;
+    color: inherit; }
+  @media only screen and (min-width: 64.063em) {
+    .toggle-dark {
+      /* button font size, desktop */
+      font-size: 15px;
+      line-height: 19px; } }
+
+.showcase header {
+  margin-bottom: 21px; }
+  @media only screen and (min-width: 64.063em) {
+    .showcase header {
+      margin-bottom: 23px; } }
+      .showcase header h1 {
+    /* showcase headers, mobile */
+    	font-size: 27px;
+		font-family: inherit; 
+		font-weight: bold; }
+      .showcase header h2 {
+	    font-size: 21px; 
+		font-family: inherit; }
+	  .showcase header h3 {
+	    font-size: 13px; 
+		font-family: inherit; 
+		padding-bottom: 60px; 
+		padding-top: 12px; }
+	  .showcase header h4 {
+		font-size: 13px;
+		font-family: inherit;
+		font-weight: bolder; }
+	  .showcase header h5 {
+		font-size: 13px;
+		font-family: inherit;
+		padding-bottom: 5px; }
+      .showcase header h6 {
+        font-size: 15px;
+        font-weight: bold;
+        font-family: inherit;
+        padding-top: 55px; }
+
+    @media only screen and (min-width: 64.063em) {
+      .showcase header h1 {
+    /* ... and desktop */
+        font-size: 15px;
+		font-family: inherit; 
+		font-weight: bold; } 
+	  .showcase header h2 {
+		font-size: 15px; 
+		font-family: inherit; }	 
+	  .showcase header h4 {
+		font-size: 15px;
+		font-family: inherit;
+		font-weight: bold; }
+	  .showcase header h5 {
+		font-size: 15px;
+		font-family: inherit; }
+      .showcase header h6 {
+        font-size: 15px;
+        font-family: inherit; 
+		padding-top: 0px; }
+	}
+	
+		 
+.showcase img {
+  margin-bottom: 60px;
+  width: 100%;
+  max-width: 540px; }
+  @media only screen and (min-width: 64.063em) {
+    .showcase img {
+      max-width: 630px; } }
+.showcase .bottom-menu {
+  margin-top: 25px; }
+  .showcase .bottom-menu .menu-trigger {
+    padding-bottom: calc(80px - 52px); }
+
+.text .title {
+  padding-bottom: calc(90px - 52px); }
+  .text .title h1 {
+    /* text header, mobile */
+    font-size: 44px;
+	font-family: inherit;
+    line-height: 52px; }
+.text .title ~ div.cell {
+  width: 150px; }
+.text p {
+  /* text block font size, mobile... */
+  font-size: 13px; }
+    @media only screen and (min-width: 64.063em) {
+    .text p {
+      /* ... desktop */
+      font-size: 15px; } }
+
+body, html {
+  height: auto; }
+
+body {
+  transition: .5s background-color ease;
+  margin: 50px 20px 100px 20px;
+  color: black;
+  -webkit-text-size-adjust: 100%;
+  /*
+  @media only screen and (min-width:40.063em) and (max-width:64em) {
+    margin: 100px 100px 90px 100px;
+  }
+  */ }
+  @media only screen and (min-width: 64.063em) {
+    body {
+      margin: 62px 50px 90px 50px; } }
+
+body.dark {
+  transition: .5s background-color ease;
+  background-color: #212121;
+  color: #bab6b6; }
+  body.dark a, body.dark button {
+    color: #bab6b6; }
+
+a {
+  text-decoration: none;
+  color: black;
+  transition: color .4s; }
+  a:hover {
+    transition: color .4s;
+    color: #ff0000; }
+
+@media only screen {
+  main > .menu-wrapper {
+    display: none; } }
+@media only screen and (min-width: 64.063em) {
+  main > .menu-wrapper {
+    width: 270px;
+    display: inline-block;
+    vertical-align: top; } }
+
+.site-title {
+  font-size: 27px;
+  /* title displayed in menu-block */
+  display: block;
+  padding-bottom: calc(63px - 30px); }
+
+.main-content {
+  max-width: 540px;
+  width: 100%; }
+  @media only screen and (min-width: 40.063em) and (max-width: 64em) {
+    .main-content {
+      margin: auto; } }
+  @media only screen and (min-width: 64.063em) {
+    .main-content {
+      max-width: 630px;
+      display: inline-block;
+      vertical-align: top;
+      margin-top: 63px; } }
+
+.index-title {
+  display: block;
+  padding-bottom: calc(110px - 52px);
+  line-height: 52px;
+  /* site title visible only on mobiles on main page */
+  font-size: 42px; }
+
+.index-menu {
+  /* menu size for main page on mobile */
+  font-size: 44px; }
+
+@media only screen {
+  .index-gallery {
+    display: none; } }
+@media only screen and (min-width: 64.063em) {
+  .index-gallery {
+    display: block; } }
+
+.inline {
+  display: inline-block; }
+
+.inline.bigger {
+  width: calc(100% - 155px); }
+
+.inline.smaller {
+  width: 150px; }
+
+.table-layout {
+  display: table;
+  width: 100%; }
+  .table-layout .cell {
+    display: table-cell; }
+
+/*# sourceMappingURL=app.css.map */
