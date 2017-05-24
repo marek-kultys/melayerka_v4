@@ -10,8 +10,6 @@
     <link href="favicon.ico" rel="shortcut icon" type="image/x-icon">
     <script type="text/javascript" src="//use.typekit.net/fut1tws.js"></script>
 	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
-    <link rel="stylesheet" href="normalize.css">
-    <link rel="stylesheet" href="foundation.css">
     <link rel="stylesheet" href="app.css">
     <script src="components/jquery/dist/jquery.min.js"></script>
     <script src="components/modernizr/modernizr.js"></script>
@@ -22,39 +20,41 @@
       <div class="menu-wrapper"><span class="site-title"><a href="/">Mela Yerka</a></span>
         <ul class="menu">
           <li>Works
-            <ul class="show-for-large-up">
+            <ul>
               <li><a id="menu-item-by-year" href="gallery.html">by year</a></li>
               <li><a href="by_series.html">by series</a></li>
-            </ul>
-            <ul class="hide-for-large-up series">
-              <li><a href="#">Feral Children</a></li>
-              <li><a href="#">Mars</a></li>
-              <li><a href="#">19th Century Women</a></li>
-              <li><a href="#">War</a></li>
             </ul>
           </li>
           <li><a href="text.html">Bio</a></li>
           <li><a href="statement.html">Statement</a></li>
-          <li><a href="exhibitions.html" class="active">Exhibitions</a></li>
+          <li><a href="showcase.html">Exhibitions</a></li>
           <li><a href="links.html">Links</a></li>
           <li><a href="contact.html">Contact</a></li>
-          <li><a href="http://mariastenfors.com">Maria Stenfors</a></li>
+          <li><a href="http://mariastenfors.com" target="_blank">Maria Stenfors</a></li>
         </ul>
       </div>
       <div class="main-content">
         <div class="menu-trigger hide-for-large-up"><a href="index.html">Menu</a></div>
-        <section class="showcase">
-          <header>
-            <h1>Show 1</h1>
-            <h2>11 - 22 December 2014</h2>
-          </header><img src="images/example_big.png"><img src="images/example_big.png"><img src="images/example_big.png">
-          <footer class="bottom-menu show-for-large-up">
-            <div class="menu-trigger hide-for-large-up"><a href="index.html">Menu</a></div>
-          </footer>
-        </section>
-        <div class="hide-for-small">
-          <footer class="copyright">Copyright © 2009-2016 Mela Yerka</footer>
-        </div>
+        <ol class="gallery">
+          <li><span class="year"><a href="2014.html">2014</a></span>
+            <div class="gallery-images"><a href="LINK" data-image="images/example.png"></a><a href="LINK" data-image="images/example.png"></a><a href="LINK" data-image="images/example.png"></a><a href="LINK" data-image="images/example.png"></a><a href="LINK" data-image="images/example.png"></a><a href="LINK" data-image="images/example.png"></a></div>
+          </li>
+          <li><span class="year"><a href="2013.html">2013</a></span>
+            <div class="gallery-images"></div>
+          </li>
+          <li><span class="year"><a href="2012.html">2012</a></span>
+            <div class="gallery-images"></div>
+          </li>
+          <li><span class="year"><a href="2011.html">2011</a></span>
+            <div class="gallery-images"></div>
+          </li>
+          <li><span class="year"><a href="2010.html">2010</a></span>
+            <div class="gallery-images"></div>
+          </li>
+          <li><span class="year"><a href="2009.html">2009 or earlier</a></span>
+            <div class="gallery-images"></div>
+          </li>
+        </ol>
       </div>
     </main>
     <script src="app.js"></script>
