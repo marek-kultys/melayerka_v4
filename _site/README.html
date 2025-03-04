@@ -1,0 +1,83 @@
+<html>
+
+  <head>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+    <style>
+
+      body { 
+        width: 600px;
+        margin: 40px auto;
+        line-height: 150%;
+      }
+
+      h2, h3 {
+        color: darkgreen;
+      }
+
+      code {
+        background-color: lightgrey;
+      }
+
+    </style>
+
+    <title>README</title>
+  </head>
+
+  <body>
+
+<h1>README</h1>
+
+<h2>Interactions</h2>
+
+<h3>"read more..." buttons</h3>
+
+<p>"Read more" buttons are visible only on portrait positioned mobiles 
+(they have <em>display</em> property set to <em>none</em> by default, see 
+<code>button.read-more</code> in CSS).</p>
+
+<p>To make a "read more" button, create button element of class <em>read-more</em>:
+<code>&lt;button class="like-link read-more"&gt;read more...&lt;/button&gt;</code></p>
+
+<p>Now content that should be showed after clicking the button must be placed 
+immediately after it, with class set to <em>more</em>:
+<code>&lt;p class="more"&gt;some content&lt;/p&gt;</code></p>
+
+<p>Any tag can be used with class <em>more</em>, but <em>p</em> seems to be semantically the best.</p>
+
+<p>After click, the button is hidden and the element of class <em>more</em> is showed. This 
+is all done by CSS on modern browsers. On old webkits JavaScript will set timeout 
+with a callback that adds class <em>more-visible</em> to the element.</p>
+
+<h3>light off/on effect</h3>
+
+<p>To enable switching light on/off, add button of class <em>toggle-light</em> anywhere:
+<code>&lt;button class="toggle-light"&gt;press to see in dark&lt;/button&gt;</code></p>
+
+<p>The image that should be replaced with a <em>glowing</em> version needs to be of class <em>glow</em>.
+After light goes off, JavaScript will find image of the same name, just with added <em>-dark</em>
+before file extension, and load it. So, <em>/any/path/image.jpg</em> will be replaced with <em>/any/path/image-dark.jpg</em>.</p>
+
+<p>Clicking the button will also toggle class 'dark' on <em>body</em> element, so CSS can do the job. To change styles,
+use <em>body.dark ...</em> selector.</p>
+
+<h2>Retina</h2>
+
+<p>Retina versions of images are loaded by retina.js library. It finds images of the same name, just with added <em>@2x</em>
+before file extension. So, if the original image is <em>/any/path/image.jpg</em>, retina.js will load <em>/any/path/image@2x.jpg</em>
+(if it exists).</p>
+
+<h2>Preloading</h2>
+
+<p><em>Glow</em> versions of images, mobile dividers (for both light on and light off versions) are preloaded.</p>
+
+<h2>js/bundle.min.js</h2>
+
+<p>This file consist of concatenated and minified libraries:
+* jquery
+* prefixfree - to automate CSS prefixing
+* html5shiv-printshiv - to make HTML5 elements render and print in older IE.</p>
+
+</body>
+</html>

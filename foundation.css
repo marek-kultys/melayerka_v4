@@ -40,8 +40,12 @@ body {
   color: #222;
   padding: 0;
   margin: 0;
-  font-family: "letter-gothic-std";
-  font-weight: normal;
+  /* font-family: "letter-gothic-std"; */
+  /* font-weight: normal; */
+  /* font-style: normal; */
+  font-family: "Victor Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 200;
   font-style: normal;
   /*copyright font size*/
   font-size: 13px;
