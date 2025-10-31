@@ -17,17 +17,17 @@ Mela collaborates with [Maria Stenfors](http://www.mariastenfors.com/artists/mel
 **SOLO SHOWS**
 
 2017
-   [**Women Don't Paint Very Well** / The Concept Space / London](/show_19.html)
+   [**Women Don't Paint Very Well** / The Concept Space / London](/shows/show_19.html)
 
 2016
    **Liaisons** / Century Club / London
-   [**Mela Yerka** / Kamarade / Stockholm](/show_18.html)
+   [**Mela Yerka** / Kamarade / Stockholm](/shows/show_18.html)
 
 2014
-   [**And the — the Surface is Fine and Powdery** / Maria Stenfors / London](/show_14.html)
+   [**And the — the Surface is Fine and Powdery** / Maria Stenfors / London](/shows/show_14.html)
 
 2013
-   [**What Red Blue is in?** / Maria Stenfors / London](/show_10.html)
+   [**What Red Blue is in?** / Maria Stenfors / London](/shows/show_10.html)
 
 
 **GROUP SHOWS**
@@ -42,28 +42,28 @@ Mela collaborates with [Maria Stenfors](http://www.mariastenfors.com/artists/mel
 
 2014
 [part is fame [art as game] / Platforma Space / Bucharest](http://platformaspace.wordpress.com/2014/09/27/part-is-fame-art-as-game/)
-[Furnishings / Sebright House, Hackney / London](/show_13.html)
-[Art & Gryl / Chomiczowka City Gardens / Warsaw](/show_12.html)
+[Furnishings / Sebright House, Hackney / London](/shows/show_13.html)
+[Art & Gryl / Chomiczowka City Gardens / Warsaw](/shows/show_12.html)
 [part is fame [art as game] / Schleifmühlgasse 12-14 / Vienna](http://12-14.org/2014_partisfameartasgame/)
 
 2013
-[Nothing About Trees / Elthorne Studios / London](/show_11.html)
+[Nothing About Trees / Elthorne Studios / London](/shows/show_11.html)
 
 2012
-[Chase of Grace / Maria Stenfors / London](/show_09.html)
+[Chase of Grace / Maria Stenfors / London](/shows/show_09.html)
 
 2011
-[Cross Over / CSM Lethaby Gallery / London](/show_08.html)
-[MA Fine Art final show / CSM Charins Cross / London](/show_07.html)
-[The New Pretenders / Oxo Tower Wharf / London](/show_06.html)
+[Cross Over / CSM Lethaby Gallery / London](/shows/show_08.html)
+[MA Fine Art final show / CSM Charins Cross / London](/shows/show_07.html)
+[The New Pretenders / Oxo Tower Wharf / London](/shows/show_06.html)
 
 	2010
-[Wild Life / We Are Arts Gallery / London](/show_05.html)
+[Wild Life / We Are Arts Gallery / London](/shows/show_05.html)
 UAL Art Salon / The Woodmill, Neckinger Depot / London
 Some You Win, Some Deleuze / Collective, Camden / London
 
 2009
-[Wernix / Teatr Nowy / Warsaw](/show_04.html)
+[Wernix / Teatr Nowy / Warsaw](/shows/show_04.html)
 Group show / The Theatre Academy / Warsaw
 Visual Structures Class / Young Artists' Gallery / Warsaw
 J. Modzelewski and the Students / Kierat 1 / Szczecin, Poland

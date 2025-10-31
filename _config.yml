@@ -12,7 +12,11 @@ permalink: /:title/
 collections:
   paintings:
     output: true
-    permalink: /:name/
+    permalink: /paintings/:name/
+  
+# Process shows folder
+include:
+  - shows
 
 # Exclude from processing
 exclude:
@@ -25,19 +29,9 @@ exclude:
   - vendor/ruby/
   - _site/
   - components/
-  - design/
-  - dist/
-  - images-NONoptimised/
-  - _notes/
   - "*.css.map"
-  - deps.css
-  - deps.css.map
-  - foundation-dark.css
   - foundation.css
-  - app-dark.css
-  - app-dark.css.map
   - app.css.map
-  - style.new.css
 
 # Sass settings
 sass:

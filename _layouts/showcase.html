@@ -1,11 +1,7 @@
 ---
 layout: default
 ---
-<div class="hide-for-large-up">
-  <span class="index-title"><a href="{{ '/' | relative_url }}">Mela Yerka</a></span>
-  <div class="index-menu"></div>
-  {% include menu.html %}
-</div>
+<div class="menu-trigger hide-for-large-up"><a href="{{ '/exhibitions.html' | relative_url }}">Back</a></div>
 <section class="showcase">
   {% if page.showcase_header %}
   <header>
@@ -17,5 +13,11 @@ layout: default
   </header>
   {% endif %}
   {{ content }}
+  <footer class="bottom-menu show-for-large-up">
+    <div class="menu-trigger hide-for-large-up"><a href="{{ '/' | relative_url }}">Menu</a></div>
+  </footer>
 </section>
+<div class="hide-for-small">
+  <footer class="copyright">Copyright © 2009-{{ site.time | date: "%Y" }} Mela Yerka</footer>
+</div>
 

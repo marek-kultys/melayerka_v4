@@ -10,12 +10,12 @@
     h1 {
       font-size: 27px;
       font-family: inherit;
-      font-weight: bold;
+      font-weight: 100;
 
       @media only screen and (min-width: 64.063em) {
         font-size: 15px;
         font-family: inherit;
-        font-weight: bold;
+        font-weight: 100;
       }
     }
 
@@ -39,12 +39,12 @@
     h4 {
       font-size: 13px;
       font-family: inherit;
-      font-weight: bolder;
+      font-weight: 100;
 
       @media only screen and (min-width: 64.063em) {
         font-size: 15px;
         font-family: inherit;
-        font-weight: bold;
+        font-weight: 100;
       }
     }
 
@@ -61,7 +61,7 @@
 
     h6 {
       font-size: 15px;
-      font-weight: bold;
+      font-weight: 100;
       font-family: inherit;
       padding-top: 55px;
 
