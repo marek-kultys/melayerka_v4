@@ -22,13 +22,13 @@ permalink: /shows/show_15.html
 <br>
 <img src="{{ '/images/SHOW_1406.jpg' | relative_url }}">
 <br>
-<img src="{{ '/images/SHOW_1403-2sec.gif">
+<img src="{{ '/images/SHOW_1403-2sec.gif' | relative_url }}">
 <br>
 <img src="{{ '/images/SHOW_1404.jpg' | relative_url }}">
 <br>
 <img src="{{ '/images/SHOW_1405.jpg' | relative_url }}">
 <br>
-<img src="{{ '/images/SHOW_1413.png"> -->
+<img src="{{ '/images/SHOW_1413.png' | relative_url }}"> -->
 <footer class="bottom-menu show-for-large-up">
 <div class="menu-trigger hide-for-large-up"><a href="{{ '/' | relative_url }}">Menu</a></div>
 </footer>

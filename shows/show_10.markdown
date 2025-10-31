@@ -34,7 +34,7 @@ permalink: /shows/show_10.html
 <br>
 <img src="{{ '/images/SHOW_1021.jpg' | relative_url }}">
 <br>
-<img src="{{ '/images/SHOW_1021.png">
+<img src="{{ '/images/SHOW_1021.png' | relative_url }}">
 <footer class="bottom-menu show-for-large-up">
 <div class="menu-trigger hide-for-large-up"><a href="{{ '/' | relative_url }}">Menu</a></div>
 </footer>

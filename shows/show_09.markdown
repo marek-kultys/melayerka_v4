@@ -22,7 +22,7 @@ permalink: /shows/show_09.html
 <br>
 <img src="{{ '/images/SHOW_901.jpg' | relative_url }}">
 <br>
-<img src="{{ '/images/SHOW_912.png">
+<img src="{{ '/images/SHOW_912.png' | relative_url }}">
 <footer class="bottom-menu show-for-large-up">
 <div class="menu-trigger hide-for-large-up"><a href="{{ '/' | relative_url }}">Menu</a></div>
 </footer>

@@ -26,7 +26,6 @@ permalink: /by_year.html
         <a href="{{ '/paintings/04_ewelina-hanska-01.html' | relative_url }}"><img src="{{ '/images/04_S_ewelina-hanska-01.jpg' | relative_url }}" alt=""></a>
         <a href="{{ '/paintings/04_delfina-potocka-02.html' | relative_url }}"><img src="{{ '/images/04_S_delfina-potocka-02.jpg' | relative_url }}" alt=""></a>
         <a href="{{ '/paintings/04_lola-montez-05.html' | relative_url }}"><img src="{{ '/images/04_S_lola-montez-05.jpg' | relative_url }}" alt=""></a>
-        <a href="{{ '/paintings/04_painting-01.html' | relative_url }}"><img src="{{ '/images/04_S_painting-01.jpg' | relative_url }}" alt=""></a>
         <a href="{{ '/paintings/04_anais-aubert-01.html' | relative_url }}"><img src="{{ '/images/04_S_anais-aubert-01.jpg' | relative_url }}" alt=""></a>
         <a href="{{ '/paintings/04_apollonie-sabatier-02.html' | relative_url }}"><img src="{{ '/images/04_S_apollonie-sabatier-02.jpg' | relative_url }}" alt=""></a>
         <a href="{{ '/paintings/04_laura-dAbrantes-02.html' | relative_url }}"><img src="{{ '/images/04_S_laura-dAbrantes-02.jpg' | relative_url }}" alt=""></a>

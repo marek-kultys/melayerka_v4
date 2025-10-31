@@ -30,7 +30,6 @@ exclude:
   - _site/
   - components/
   - "*.css.map"
-  - foundation.css
   - app.css.map
 
 # Sass settings
