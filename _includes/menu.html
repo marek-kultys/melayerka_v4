@@ -1,23 +1,10 @@
 <div class="menu-wrapper">
   <span class="site-title"><a href="{{ '/' | relative_url }}">Mela Yerka</a></span>
   <ul class="menu">
-    <li>Works
-      <ul class="show-for-large-up">
-        <li><a href="{{ '/by_series.html' | relative_url }}"{% if page.layout == 'by-series' %} class="active"{% endif %}>by series</a></li>
-        <li><a id="menu-item-by-year" href="{{ '/by_year.html' | relative_url }}"{% if page.layout == 'by-year' %} class="active"{% endif %}>by year</a></li>
-      </ul>
-      <ul class="hide-for-large-up series">
-        <li><a href="{{ '/mini-series_Mars.html' | relative_url }}">Mars</a></li>
-        <li><a href="{{ '/mini-series_Feral.html' | relative_url }}">Feral Children</a></li>
-        <li><a href="{{ '/mini-series_Women.html' | relative_url }}">19th Century Women</a></li>
-        <li><a href="{{ '/mini-series_Grimm.html' | relative_url }}">Grimm Tales</a></li>
-        <li><a href="{{ '/mini-series_Dead.html' | relative_url }}">Dead</a></li>
-        <li><a href="{{ '/mini-series_War.html' | relative_url }}">Beautiful Painting of War</a></li>
-      </ul>
-    </li>
+    <li><a href="{{ '/works.html' | relative_url }}"{% if page.layout == 'by-series' or page.url == '/works.html' or page.layout == 'painting' %} class="active"{% endif %}>Works</a></li>
     <li><a href="{{ '/bio.html' | relative_url }}"{% if page.url == '/bio.html' %} class="active"{% endif %}>Bio</a></li>
     <li><a href="{{ '/statement.html' | relative_url }}"{% if page.url == '/statement.html' %} class="active"{% endif %}>Statement</a></li>
-    <li><a href="{{ '/exhibitions.html' | relative_url }}"{% if page.url == '/exhibitions.html' %} class="active"{% endif %}>Exhibitions</a></li>
+    <li><a href="{{ '/exhibitions.html' | relative_url }}"{% if page.url == '/exhibitions.html' or page.layout == 'showcase' %} class="active"{% endif %}>Exhibitions</a></li>
     <li><a href="https://www.instagram.com/melayerka/" target="_blank">Instagram</a></li>
     <li><a href="{{ '/contact.html' | relative_url }}"{% if page.url == '/contact.html' %} class="active"{% endif %}>Contact</a></li>
   </ul>
