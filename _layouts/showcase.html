@@ -1,0 +1,21 @@
+---
+layout: default
+---
+<div class="hide-for-large-up">
+  <span class="index-title"><a href="{{ '/' | relative_url }}">Mela Yerka</a></span>
+  <div class="index-menu"></div>
+  {% include menu.html %}
+</div>
+<section class="showcase">
+  {% if page.showcase_header %}
+  <header>
+    {% if page.showcase_header.title %}<h6><a href="{{ page.showcase_header.link | relative_url }}">{{ page.showcase_header.title }}</a></h6>{% endif %}
+    {% if page.showcase_header.medium %}<h5>{{ page.showcase_header.medium }}</br>{{ page.showcase_header.year }}</h5>{% endif %}
+    {% if page.showcase_header.link and page.showcase_header.image %}
+    <a href="{{ page.showcase_header.link | relative_url }}"><img src="{{ page.showcase_header.image | relative_url }}" alt="{{ page.showcase_header.title }}"></a>
+    {% endif %}
+  </header>
+  {% endif %}
+  {{ content }}
+</section>
+

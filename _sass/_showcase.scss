@@ -1,0 +1,94 @@
+// Showcase styles
+.showcase {
+  header {
+    margin-bottom: 21px;
+
+    @media only screen and (min-width: 64.063em) {
+      margin-bottom: 23px;
+    }
+
+    h1 {
+      font-size: 27px;
+      font-family: inherit;
+      font-weight: bold;
+
+      @media only screen and (min-width: 64.063em) {
+        font-size: 15px;
+        font-family: inherit;
+        font-weight: bold;
+      }
+    }
+
+    h2 {
+      font-size: 21px;
+      font-family: inherit;
+
+      @media only screen and (min-width: 64.063em) {
+        font-size: 15px;
+        font-family: inherit;
+      }
+    }
+
+    h3 {
+      font-size: 13px;
+      font-family: inherit;
+      padding-bottom: 60px;
+      padding-top: 12px;
+    }
+
+    h4 {
+      font-size: 13px;
+      font-family: inherit;
+      font-weight: bolder;
+
+      @media only screen and (min-width: 64.063em) {
+        font-size: 15px;
+        font-family: inherit;
+        font-weight: bold;
+      }
+    }
+
+    h5 {
+      font-size: 13px;
+      font-family: inherit;
+      padding-bottom: 5px;
+
+      @media only screen and (min-width: 64.063em) {
+        font-size: 15px;
+        font-family: inherit;
+      }
+    }
+
+    h6 {
+      font-size: 15px;
+      font-weight: bold;
+      font-family: inherit;
+      padding-top: 55px;
+
+      @media only screen and (min-width: 64.063em) {
+        font-size: 15px;
+        font-family: inherit;
+        padding-top: 0px;
+      }
+    }
+  }
+
+  img {
+    margin-bottom: 60px;
+    width: 100%;
+    max-width: 540px;
+
+    @media only screen and (min-width: 64.063em) {
+      max-width: 630px;
+    }
+  }
+
+  .bottom-menu {
+    margin-top: 25px;
+
+    .menu-trigger {
+      padding-bottom: calc(80px - 52px);
+    }
+  }
+}
+

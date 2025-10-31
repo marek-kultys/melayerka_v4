@@ -1,0 +1,61 @@
+// Layout styles
+@media only screen {
+  main > .menu-wrapper {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 64.063em) {
+  main > .menu-wrapper {
+    width: 270px;
+    display: inline-block;
+    vertical-align: top;
+  }
+}
+
+.main-content {
+  max-width: 540px;
+  width: 100%;
+
+  @media only screen and (min-width: 40.063em) and (max-width: 64em) {
+    margin: auto;
+  }
+
+  @media only screen and (min-width: 64.063em) {
+    max-width: 630px;
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 63px;
+  }
+}
+
+.hide-for-large-up {
+  @media only screen and (min-width: 64.063em) {
+    display: none !important;
+  }
+}
+
+.show-for-large-up {
+  display: none !important;
+
+  @media only screen and (min-width: 64.063em) {
+    display: block !important;
+  }
+}
+
+.hide-for-small {
+  @media only screen {
+    display: none !important;
+  }
+}
+
+
+.index-gallery {
+  @media only screen {
+    display: none;
+  }
+  @media only screen and (min-width: 64.063em) {
+    display: block;
+  }
+}
+

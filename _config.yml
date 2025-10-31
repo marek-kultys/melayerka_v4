@@ -1,0 +1,53 @@
+# Site settings
+title: Mela Yerka
+description: "Mela Yerka. Graduated in 2011 from Central Saint Martins, London, having previously studied at the Academy of Fine Arts in Warsaw, Poland. Mela is the winner of the Cass Art Painting Prize 2011. Polish born, she now lives and works in London. She exhibits her work internationally."
+url: "https://melayerka.com"
+baseurl: ""
+
+# Build settings
+markdown: kramdown
+permalink: /:title/
+
+# Collections
+collections:
+  paintings:
+    output: true
+    permalink: /:name/
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - _site/
+  - components/
+  - design/
+  - dist/
+  - images-NONoptimised/
+  - _notes/
+  - "*.css.map"
+  - deps.css
+  - deps.css.map
+  - foundation-dark.css
+  - foundation.css
+  - app-dark.css
+  - app-dark.css.map
+  - app.css.map
+  - style.new.css
+
+# Sass settings
+sass:
+  style: compressed
+  sass_dir: _sass
+
+# Plugins
+plugins:
+  - jekyll-feed
+
+# Analytics
+google_analytics: UA-72810828-1
+

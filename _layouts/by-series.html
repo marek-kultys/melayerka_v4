@@ -1,0 +1,24 @@
+---
+layout: default
+---
+<div class="menu-trigger hide-for-large-up"><a href="{{ '/' | relative_url }}">Menu</a></div>
+<article class="by-series">
+  {% for series in site.data.series %}
+  <section>
+    <h1 id="{{ series.id }}">{{ series.name }}</h1>
+    <p>{{ series.description }}</p>
+    <p>({{ series.period }})</p>
+    {% if series.paintings %}
+    <div class="gallery-images">
+      {% for painting in series.paintings %}
+      <a href="{{ painting.url | relative_url }}"><img src="{{ painting.thumbnail | relative_url }}"></a>
+      {% endfor %}
+    </div>
+    {% endif %}
+  </section>
+  {% endfor %}
+</article>
+<div class="hide-for-small">
+  <footer class="copyright">Copyright © 2009-{{ site.time | date: "%Y" }} Mela Yerka</footer>
+</div>
+

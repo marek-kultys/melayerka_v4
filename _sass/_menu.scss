@@ -1,0 +1,62 @@
+// Menu styles
+ul.menu {
+  list-style-type: none;
+  margin-left: 0;
+  padding-left: 0;
+  font-size: 27px;
+
+  @media only screen and (min-width: 64.063em) {
+    font-size: 15px;
+  }
+
+  ul {
+    list-style-type: none;
+    padding-left: 2px;
+    font-size: 15px;
+  }
+
+  a {
+    color: black;
+    text-decoration: none;
+
+    &.active {
+      text-decoration: underline;
+    }
+
+    &:hover {
+      color: #ff0000;
+      font-size: inherit;
+    }
+  }
+
+  .series {
+    font-size: 15px;
+    font-weight: regular;
+  }
+}
+
+.menu-trigger {
+  padding-bottom: 66px;
+  line-height: 44px;
+  font-size: 44px;
+  text-align: right;
+  padding-left: 40px;
+}
+
+.site-title {
+  font-size: 27px;
+  display: block;
+  padding-bottom: calc(63px - 30px);
+}
+
+.index-title {
+  display: block;
+  padding-bottom: calc(110px - 52px);
+  line-height: 52px;
+  font-size: 42px;
+}
+
+.index-menu {
+  font-size: 44px;
+}
+

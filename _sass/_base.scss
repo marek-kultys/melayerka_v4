@@ -1,0 +1,58 @@
+// Base styles
+body, html {
+  height: auto;
+}
+
+body {
+  transition: background-color 0.5s ease;
+  margin: 50px 20px 100px 20px;
+  color: black;
+  -webkit-text-size-adjust: 100%;
+
+  @media only screen and (min-width: 64.063em) {
+    margin: 62px 50px 90px 50px;
+  }
+}
+
+body.dark {
+  transition: background-color 0.5s ease;
+  background-color: #212121;
+  color: #bab6b6;
+
+  a, button {
+    color: #bab6b6;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  transition: color 0.4s;
+
+  &:hover {
+    transition: color 0.4s;
+    color: #ff0000;
+  }
+}
+
+.inline {
+  display: inline-block;
+
+  &.bigger {
+    width: calc(100% - 155px);
+  }
+
+  &.smaller {
+    width: 150px;
+  }
+}
+
+.table-layout {
+  display: table;
+  width: 100%;
+
+  .cell {
+    display: table-cell;
+  }
+}
+

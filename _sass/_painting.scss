@@ -1,0 +1,78 @@
+// Painting page styles
+.painting {
+  margin-bottom: 80px;
+
+  @media only screen and (min-width: 64.063em) {
+    margin-bottom: 60px;
+  }
+
+  &, img {
+    width: 100%;
+    max-width: 540px;
+
+    @media only screen and (min-width: 64.063em) {
+      max-width: 630px;
+    }
+  }
+
+  img {
+    margin-bottom: 65px;
+
+    @media only screen and (min-width: 64.063em) {
+      margin-bottom: 0px;
+    }
+  }
+
+  p {
+    font-size: 24px;
+  }
+
+  &.menu-wrapper .menu-trigger {
+    padding-bottom: calc(90px - 52px);
+  }
+}
+
+.navigation-controls {
+  font-size: 52px;
+  line-height: 52px;
+  padding-bottom: calc(65px - 52px);
+
+  .next {
+    text-align: right;
+  }
+
+  a {
+    display: block;
+    width: 100%;
+    color: black;
+  }
+}
+
+.navigation-controls:not(.dark-button-enabled).next,
+.year ~ div.cell {
+  width: 150px;
+}
+
+.toggle-dark {
+  vertical-align: middle;
+  border-style: none;
+  padding: 0;
+  background-color: transparent;
+  margin: 0;
+  color: black;
+  width: 100%;
+  font-size: 52px;
+  line-height: 52px;
+
+  &:hover, &:focus, &:active {
+    background-color: transparent;
+    outline: none;
+    color: inherit;
+  }
+
+  @media only screen and (min-width: 64.063em) {
+    font-size: 15px;
+    line-height: 19px;
+  }
+}
+

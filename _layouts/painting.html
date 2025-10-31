@@ -1,0 +1,29 @@
+---
+layout: default
+---
+<div class="table-layout">
+  <div class="cell year">{% if page.title %}"{{ page.title }}"{% else %}{{ page.year }}{% endif %}
+    {% if page.description %}
+    <p class="description show-for-large-up">{{ page.description }}</p>
+    {% endif %}
+  </div>
+  <div class="cell painting menu-wrapper">
+    <div class="menu-trigger hide-for-large-up"><a href="{{ '/' | relative_url }}">Menu</a></div>
+  </div>
+</div>
+<section class="navigation-controls table-layout">
+  <div class="cell previous">
+    {% if page.previous %}<a href="{{ page.previous | relative_url }}"><</a>{% endif %}
+  </div>
+  <div class="cell next">
+    {% if page.next %}<a href="{{ page.next | relative_url }}">></a>{% endif %}
+  </div>
+</section>
+<section class="painting">
+  <img src="{{ page.image | relative_url }}" alt="{{ page.title }}">
+  {% if page.description %}
+  <p class="description hide-for-large-up">{{ page.description }}</p>
+  {% endif %}
+</section>
+<footer class="copyright">Copyright © 2009-{{ site.time | date: "%Y" }} Mela Yerka</footer>
+
