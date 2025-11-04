@@ -20,18 +20,26 @@ ol.gallery {
 }
 
 .gallery-images {
-  display: none;
+  display: block;
 
-  @media only screen and (min-width: 64.063em) {
-    display: block;
+  img {
+    width: 100%;
+    max-width: 540px;
+    margin-bottom: 40px;
 
-    img {
+    @media only screen and (min-width: 64.063em) {
       height: 150px;
+      width: auto;
+      max-width: none;
     }
+  }
 
-    a {
+  a {
+    display: block;
+    margin-bottom: 40px;
+
+    @media only screen and (min-width: 64.063em) {
       display: inline-block;
-      margin-bottom: 40px;
 
       &:not(:last-child) {
         margin-right: 35px;

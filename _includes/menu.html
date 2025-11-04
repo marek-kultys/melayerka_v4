@@ -4,7 +4,7 @@
     <li><a href="{{ '/works.html' | relative_url }}"{% if page.layout == 'by-series' or page.url == '/works.html' or page.layout == 'painting' %} class="active"{% endif %}>Works</a></li>
     <li><a href="{{ '/bio.html' | relative_url }}"{% if page.url == '/bio.html' %} class="active"{% endif %}>Bio</a></li>
     <li><a href="{{ '/statement.html' | relative_url }}"{% if page.url == '/statement.html' %} class="active"{% endif %}>Statement</a></li>
-    <li><a href="{{ '/exhibitions.html' | relative_url }}"{% if page.url == '/exhibitions.html' or page.layout == 'showcase' %} class="active"{% endif %}>Exhibitions</a></li>
+    <li><a href="{{ '/exhibitions.html' | relative_url }}"{% if page.url == '/exhibitions.html' or (page.layout == 'showcase' and page.url != '/' and page.url != '/index.html') %} class="active"{% endif %}>Exhibitions</a></li>
     <li><a href="https://www.instagram.com/melayerka/" target="_blank">Instagram</a></li>
     <li><a href="{{ '/contact.html' | relative_url }}"{% if page.url == '/contact.html' %} class="active"{% endif %}>Contact</a></li>
   </ul>

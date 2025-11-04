@@ -5,23 +5,23 @@
   period: "2013 – 2014"
   paintings:
     - url: /paintings/06_mars-01.html
-      thumbnail: /images/06_S_mars-01.jpg
+      thumbnail: /images/06_L_mars-01.jpg
     - url: /paintings/06_mars-02.html
-      thumbnail: /images/06_S_mars-02.jpg
+      thumbnail: /images/06_L_mars-02.jpg
     - url: /paintings/06_mars-03.html
-      thumbnail: /images/06_S_mars-03.jpg
+      thumbnail: /images/06_L_mars-03.jpg
     - url: /paintings/06_martian-rock-01.html
-      thumbnail: /images/06_S_martian-rock-01.jpg
+      thumbnail: /images/06_L_martian-rock-01.jpg
     - url: /paintings/06_martian-crater-01.html
-      thumbnail: /images/06_S_martian-crater-01.jpg
+      thumbnail: /images/06_L_martian-crater-01.jpg
     - url: /paintings/06_martian-rock-02.html
-      thumbnail: /images/06_S_martian-rock-02.jpg
+      thumbnail: /images/06_L_martian-rock-02.jpg
     - url: /paintings/06_martian-diptych.html
-      thumbnail: /images/06_S_martian-diptych.jpg
+      thumbnail: /images/06_L_martian-diptych.jpg
     - url: /paintings/06_martian-diptych-A.html
-      thumbnail: /images/06_S_martian-diptych-A.jpg
+      thumbnail: /images/06_L_martian-diptych-A.jpg
     - url: /paintings/06_martian-diptych-B.html
-      thumbnail: /images/06_S_martian-diptych-B.jpg
+      thumbnail: /images/06_L_martian-diptych-B.jpg
 
 - id: Feral-children
   name: Feral Children
@@ -32,29 +32,29 @@
   period: "2012 – 2013"
   paintings:
     - url: /paintings/05_genie-wiley-01.html
-      thumbnail: /images/05_S_genie-wiley-01.jpg
+      thumbnail: /images/05_L_genie-wiley-01.jpg
     - url: /paintings/05_genie-wiley-02.html
-      thumbnail: /images/05_S_genie-wiley-02.jpg
+      thumbnail: /images/05_L_genie-wiley-02.jpg
     - url: /paintings/05_genie-wiley-03.html
-      thumbnail: /images/05_S_genie-wiley-03.jpg
+      thumbnail: /images/05_L_genie-wiley-03.jpg
     - url: /paintings/05_genie-wiley-04.html
-      thumbnail: /images/05_S_genie-wiley-04.jpg
+      thumbnail: /images/05_L_genie-wiley-04.jpg
     - url: /paintings/05_ivan-mishukov-01.html
-      thumbnail: /images/05_S_ivan-mishukov-01.jpg
+      thumbnail: /images/05_L_ivan-mishukov-01.jpg
     - url: /paintings/05_john-ssebunya-01.html
-      thumbnail: /images/05_S_john-ssebunya-01.jpg
+      thumbnail: /images/05_L_john-ssebunya-01.jpg
     - url: /paintings/05_kamala-01.html
-      thumbnail: /images/05_S_kamala-01.jpg
+      thumbnail: /images/05_L_kamala-01.jpg
     - url: /paintings/05_memmie-le-blanc-01.html
-      thumbnail: /images/05_S_memmie-le-blanc-01.jpg
+      thumbnail: /images/05_L_memmie-le-blanc-01.jpg
     - url: /paintings/05_peter-wild-boy-01.html
-      thumbnail: /images/05_S_peter-wild-boy-01.jpg
+      thumbnail: /images/05_L_peter-wild-boy-01.jpg
     - url: /paintings/05_discovery-of-moses-01.html
-      thumbnail: /images/05_S_discovery-of-moses-01.jpg
+      thumbnail: /images/05_L_discovery-of-moses-01.jpg
     - url: /paintings/05_discovery-of-moses-02.html
-      thumbnail: /images/05_S_discovery-of-moses-02.jpg
+      thumbnail: /images/05_L_discovery-of-moses-02.jpg
     - url: /paintings/05_untitled-01.html
-      thumbnail: /images/05_S_untitled-01.jpg
+      thumbnail: /images/05_L_untitled-01.jpg
 
 - id: Women-of-19th-Century
   name: Women of the 19th Century
@@ -63,59 +63,59 @@
   period: "2011 – present"
   paintings:
     - url: /paintings/04_laura-dAbrantes-01.html
-      thumbnail: /images/04_S_laura-dAbrantes-01.jpg
+      thumbnail: /images/04_L_laura-dAbrantes-01.jpg
     - url: /paintings/04_maria-walewska-01.html
-      thumbnail: /images/04_S_maria-walewska-01.jpg
+      thumbnail: /images/04_L_maria-walewska-01.jpg
     - url: /paintings/04_rachel-felix-01.html
-      thumbnail: /images/04_S_rachel-felix-01.jpg
+      thumbnail: /images/04_L_rachel-felix-01.jpg
     - url: /paintings/04_george-sand-03.html
-      thumbnail: /images/04_S_george-sand-03.jpg
+      thumbnail: /images/04_L_george-sand-03.jpg
     - url: /paintings/04_ewelina-hanska-01.html
-      thumbnail: /images/04_S_ewelina-hanska-01.jpg
+      thumbnail: /images/04_L_ewelina-hanska-01.jpg
     - url: /paintings/04_delfina-potocka-02.html
-      thumbnail: /images/04_S_delfina-potocka-02.jpg
+      thumbnail: /images/04_L_delfina-potocka-02.jpg
     - url: /paintings/04_lola-montez-05.html
-      thumbnail: /images/04_S_lola-montez-05.jpg
+      thumbnail: /images/04_L_lola-montez-05.jpg
     - url: /paintings/04_lola-montez-06.html
       thumbnail: /images/04_L_lola-montez-06.jpg
     - url: /paintings/04_anais-aubert-01.html
-      thumbnail: /images/04_S_anais-aubert-01.jpg
+      thumbnail: /images/04_L_anais-aubert-01.jpg
     - url: /paintings/04_apollonie-sabatier-02.html
-      thumbnail: /images/04_S_apollonie-sabatier-02.jpg
+      thumbnail: /images/04_L_apollonie-sabatier-02.jpg
     - url: /paintings/04_laura-dAbrantes-02.html
-      thumbnail: /images/04_S_laura-dAbrantes-02.jpg
+      thumbnail: /images/04_L_laura-dAbrantes-02.jpg
     - url: /paintings/04_painting-02.html
-      thumbnail: /images/04_S_painting-02.jpg
+      thumbnail: /images/04_L_painting-02.jpg
     - url: /paintings/04_delfina-potocka-01.html
-      thumbnail: /images/04_S_delfina-potocka-01.jpg
+      thumbnail: /images/04_L_delfina-potocka-01.jpg
     - url: /paintings/04_lola-montez-03.html
-      thumbnail: /images/04_S_lola-montez-03.jpg
+      thumbnail: /images/04_L_lola-montez-03.jpg
     - url: /paintings/04_aimee-desclee-01.html
-      thumbnail: /images/04_S_aimee-desclee-01.jpg
+      thumbnail: /images/04_L_aimee-desclee-01.jpg
     - url: /paintings/04_untitled-01.html
-      thumbnail: /images/04_S_untitled-01.jpg
+      thumbnail: /images/04_L_untitled-01.jpg
     - url: /paintings/04_george-sand-02.html
-      thumbnail: /images/04_S_george-sand-02.jpg
+      thumbnail: /images/04_L_george-sand-02.jpg
     - url: /paintings/04_lola-montez-02.html
-      thumbnail: /images/04_S_lola-montez-02.jpg
+      thumbnail: /images/04_L_lola-montez-02.jpg
     - url: /paintings/04_marie-duplessis-01.html
-      thumbnail: /images/04_S_marie-duplessis-01.jpg
+      thumbnail: /images/04_L_marie-duplessis-01.jpg
     - url: /paintings/04_lola-montez-04.html
-      thumbnail: /images/04_S_lola-montez-04.jpg
+      thumbnail: /images/04_L_lola-montez-04.jpg
     - url: /paintings/04_lola-montez-01.html
-      thumbnail: /images/04_S_lola-montez-01.jpg
+      thumbnail: /images/04_L_lola-montez-01.jpg
     - url: /paintings/04_apollonie-sabatier-01.html
-      thumbnail: /images/04_S_apollonie-sabatier-01.jpg
+      thumbnail: /images/04_L_apollonie-sabatier-01.jpg
     - url: /paintings/04_karolina-sobanska-01.html
-      thumbnail: /images/04_S_karolina-sobanska-01.jpg
+      thumbnail: /images/04_L_karolina-sobanska-01.jpg
     - url: /paintings/04_george-sand-01.html
-      thumbnail: /images/04_S_george-sand-01.jpg
+      thumbnail: /images/04_L_george-sand-01.jpg
     - url: /paintings/04_karolina-sobanska-02.html
-      thumbnail: /images/04_S_karolina-sobanska-02.jpg
+      thumbnail: /images/04_L_karolina-sobanska-02.jpg
     - url: /paintings/04_anais-aubert-02.html
-      thumbnail: /images/04_S_anais-aubert-02.jpg
+      thumbnail: /images/04_L_anais-aubert-02.jpg
     - url: /paintings/04_juliette-drouet-01.html
-      thumbnail: /images/04_S_juliette-drouet-01.jpg
+      thumbnail: /images/04_L_juliette-drouet-01.jpg
 
 - id: Grimm-tales
   name: Grimm Tales
@@ -124,29 +124,29 @@
   period: "2009 – 2012"
   paintings:
     - url: /paintings/03_allerleirauch.html
-      thumbnail: /images/03_S_allerleirauch.jpg
+      thumbnail: /images/03_L_allerleirauch.jpg
     - url: /paintings/03_wichtelmaenner.html
-      thumbnail: /images/03_S_wichtelmaenner2.jpg
+      thumbnail: /images/03_L_wichtelmaenner2.jpg
     - url: /paintings/03_marienkind.html
-      thumbnail: /images/03_S_marienkind2.jpg
+      thumbnail: /images/03_L_marienkind2.jpg
     - url: /paintings/03_machandelboom.html
-      thumbnail: /images/03_S_machandelboom2.jpg
+      thumbnail: /images/03_L_machandelboom2.jpg
     - url: /paintings/03_gaensemagd.html
-      thumbnail: /images/03_S_gaensemagd.jpg
+      thumbnail: /images/03_L_gaensemagd.jpg
     - url: /paintings/03_rumpelstilzchen.html
-      thumbnail: /images/03_S_rumpelstilzchen2.jpg
+      thumbnail: /images/03_L_rumpelstilzchen2.jpg
     - url: /paintings/03_weisse-schwarze-braut.html
-      thumbnail: /images/03_S_weisseschwartze.jpg
+      thumbnail: /images/03_L_weisseschwartze.jpg
     - url: /paintings/03_gelernte-jaeger.html
-      thumbnail: /images/03_S_jaeger-02.png
+      thumbnail: /images/03_L_jaeger-02.png
     - url: /paintings/03_trommler.html
-      thumbnail: /images/03_S_trommler.jpg
+      thumbnail: /images/03_L_trommler.jpg
     - url: /paintings/03_baerenhaeuter.html
-      thumbnail: /images/03_S_baerenhaeuter.jpg
+      thumbnail: /images/03_L_baerenhaeuter.jpg
     - url: /paintings/03_meisterdieb.html
-      thumbnail: /images/03_S_meisterdieb.jpg
+      thumbnail: /images/03_L_meisterdieb.jpg
     - url: /paintings/03_bauer-und-teufel.html
-      thumbnail: /images/03_S_teufel.jpg
+      thumbnail: /images/03_L_teufel.jpg
 
 - id: Dead
   name: Dead
@@ -155,13 +155,13 @@
   period: "2008 – 2009"
   paintings:
     - url: /paintings/01_hunter.html
-      thumbnail: /images/01_S_hunter-2.jpg
+      thumbnail: /images/01_L_hunter-2.jpg
     - url: /paintings/01_lady.html
-      thumbnail: /images/01_S_deer-02.jpg
+      thumbnail: /images/01_L_deer-02.jpg
     - url: /paintings/01_rabbits.html
-      thumbnail: /images/01_S_rabbits.jpg
+      thumbnail: /images/01_L_rabbits.jpg
     - url: /paintings/01_3deers.html
-      thumbnail: /images/01_S_3deers.jpg
+      thumbnail: /images/01_L_3deers.jpg
 
 - id: Beautiful-painting-of-war
   name: Beautiful Painting of War
@@ -170,13 +170,13 @@
   period: "2007 – 2008"
   paintings:
     - url: /paintings/02_falling.html
-      thumbnail: /images/02_S_falling.jpg
+      thumbnail: /images/02_L_falling.jpg
     - url: /paintings/02_starting.html
-      thumbnail: /images/02_S_starting.jpg
+      thumbnail: /images/02_L_starting.jpg
     - url: /paintings/02_carrier2.html
-      thumbnail: /images/02_S_carrier-02.jpg
+      thumbnail: /images/02_L_carrier-02.jpg
     - url: /paintings/02_airplane.html
-      thumbnail: /images/02_S_airplane.jpg
+      thumbnail: /images/02_L_airplane.jpg
     - url: /paintings/02_burning.html
-      thumbnail: /images/02_S_burning.jpg
+      thumbnail: /images/02_L_burning.jpg
 

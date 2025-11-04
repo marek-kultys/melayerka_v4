@@ -1,7 +1,15 @@
 ---
 layout: default
 ---
+{% if page.url == '/' %}
+<div class="hide-for-large-up">
+  <span class="index-title"><a href="{{ '/' | relative_url }}">Mela Yerka</a></span>
+  <div class="index-menu"></div>
+  {% include menu.html %}
+</div>
+{% elsif page.showcase_header %}
 <div class="menu-trigger hide-for-large-up"><a href="{{ '/exhibitions.html' | relative_url }}">Back</a></div>
+{% endif %}
 <section class="showcase">
   {% if page.showcase_header %}
   <header>
@@ -14,9 +22,11 @@ layout: default
   {% endif %}
   {{ content }}
   <footer class="bottom-menu show-for-large-up">
-    <div class="menu-trigger hide-for-large-up"><a href="{{ '/' | relative_url }}">Menu</a></div>
   </footer>
 </section>
+{% if page.url == '/' %}
+<div class="menu-trigger hide-for-large-up"><a href="{{ '/' | relative_url }}">Menu</a></div>
+{% endif %}
 <div class="hide-for-small">
   <footer class="copyright">Copyright © 2009-{{ site.time | date: "%Y" }} Mela Yerka</footer>
 </div>

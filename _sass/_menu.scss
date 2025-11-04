@@ -57,6 +57,18 @@ ul.menu {
 }
 
 .index-menu {
-  font-size: 44px;
+  font-size: 27px;
+  padding-bottom: calc(110px - 52px);
+}
+
+// Mobile menu wrapper (only shown on homepage)
+.hide-for-large-up .menu-wrapper {
+  .site-title {
+    display: none; // Hide site-title on mobile homepage since index-title is shown
+  }
+  
+  .menu {
+    font-size: 27px; // Reduced from 44px to match original mobile menu size
+  }
 }
 

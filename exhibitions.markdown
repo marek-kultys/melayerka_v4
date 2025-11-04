@@ -88,8 +88,8 @@ permalink: /exhibitions.html
 	<a href="/shows/show_04.html"><img src="/images/SHOW_401.jpg"></a>
 </header>
 <footer class="bottom-menu show-for-large-up">
-	<div class="menu-trigger hide-for-large-up"><a href="/">Menu</a></div>
 </footer>
+<div class="menu-trigger hide-for-large-up"><a href="{{ '/' | relative_url }}">Menu</a></div>
 <div class="hide-for-small">
 	<footer class="copyright">Copyright © 2009-{{ site.time | date: "%Y" }} Mela Yerka</footer>
 </div>

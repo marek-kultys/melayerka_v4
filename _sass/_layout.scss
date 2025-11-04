@@ -3,6 +3,11 @@
   main > .menu-wrapper {
     display: none;
   }
+  
+  // Show menu on mobile when inside .hide-for-large-up (homepage)
+  .hide-for-large-up .menu-wrapper {
+    display: block;
+  }
 }
 
 @media only screen and (min-width: 64.063em) {
