@@ -12,7 +12,7 @@ ul.menu {
       font-size: 15px; } }
   ul.menu ul {
     list-style-type: none;
-    padding-left: 2px;
+    padding-left: 2px; 
 	font-size: 15px; }
   ul.menu a {
     color: black;
@@ -26,14 +26,14 @@ ul.menu {
   ul.menu .series {
     /* a link to series (under "Works" category) font size for mobile */
     font-size: 15px;
-    font-weight: regular; }
+    font-weight: bold; }
 
 .menu-trigger {
   padding-bottom: 66px;
   line-height: 44px;
   /* A "Menu" label displayed on all mobile sites */
   font-size: 44px;
-  text-align: right;
+  text-align: right; 
   padding-left: 40px;}
 
 ol.gallery {
@@ -74,7 +74,7 @@ ol.gallery {
   font-size: 27px;
   line-height: 27px;
   padding-bottom: 27px;
-  font-family: inherit;
+  font-family: inherit; 
   font-weight: bold; }
 .by-series section h2 {
   /* long description font size for mobile */
@@ -82,7 +82,7 @@ ol.gallery {
   line-height: 21px;
   padding-top: 50px;
   padding-bottom: calc(42px - 19px);
-  font-family: inherit;
+  font-family: inherit; 
   font-weight: bold; }
 
 .year {
@@ -170,15 +170,15 @@ ol.gallery {
       .showcase header h1 {
     /* showcase headers, mobile */
     	font-size: 27px;
-		font-family: inherit;
+		font-family: inherit; 
 		font-weight: bold; }
       .showcase header h2 {
-	    font-size: 21px;
+	    font-size: 21px; 
 		font-family: inherit; }
 	  .showcase header h3 {
-	    font-size: 13px;
-		font-family: inherit;
-		padding-bottom: 60px;
+	    font-size: 13px; 
+		font-family: inherit; 
+		padding-bottom: 60px; 
 		padding-top: 12px; }
 	  .showcase header h4 {
 		font-size: 13px;
@@ -198,11 +198,11 @@ ol.gallery {
       .showcase header h1 {
     /* ... and desktop */
         font-size: 15px;
-		font-family: inherit;
-		font-weight: bold; }
+		font-family: inherit; 
+		font-weight: bold; } 
 	  .showcase header h2 {
-		font-size: 15px;
-		font-family: inherit; }
+		font-size: 15px; 
+		font-family: inherit; }	 
 	  .showcase header h4 {
 		font-size: 15px;
 		font-family: inherit;
@@ -212,11 +212,11 @@ ol.gallery {
 		font-family: inherit; }
       .showcase header h6 {
         font-size: 15px;
-        font-family: inherit;
+        font-family: inherit; 
 		padding-top: 0px; }
 	}
-
-
+	
+		 
 .showcase img {
   margin-bottom: 60px;
   width: 100%;
