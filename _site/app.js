@@ -61,15 +61,7 @@
   }
 })();
 
-/* ----- 3. Dual prev/next navigation context (series vs year) ------- */
-(function () {
-  var ctx = new URLSearchParams(window.location.search).get('ctx');
-  if (ctx !== 'series') return;
-  document.querySelectorAll('.nav-year').forEach(function (el) { el.hidden = true; });
-  document.querySelectorAll('.nav-series').forEach(function (el) { el.hidden = false; });
-})();
-
-/* ----- 4. by_year gallery: load thumbnail images on desktop -------- */
+/* ----- 3. by_year gallery: load thumbnail images on desktop -------- */
 (function () {
   var pathname = window.location.pathname;
   if (!/by_year/.test(pathname) && !/gallery/.test(pathname)) return;

@@ -21,14 +21,14 @@ ul.menu {
   list-style-type: none;
   margin-left: 0;
   padding-left: 0;
-  font-size: 27px; }
+  font-size: 35.7px; }
   @media only screen and (min-width: 64.063em) {
     ul.menu {
-      font-size: 15px; } }
+      font-size: 19.8px; } }
   ul.menu ul {
     list-style-type: none;
     padding-left: 2px;
-    font-size: 15px; }
+    font-size: 19.8px; }
   ul.menu a {
     color: var(--link);
     text-decoration: none; }
@@ -38,25 +38,25 @@ ul.menu {
     color: var(--link-hover);
     font-size: inherit; }
   ul.menu .series {
-    font-size: 15px;
+    font-size: 19.8px;
     font-weight: regular; }
 
 .menu-trigger {
   padding-bottom: 66px;
-  line-height: 44px;
-  font-size: 44px;
+  line-height: 58.2px;
+  font-size: 58.2px;
   text-align: right;
   padding-left: 40px; }
 
 ol.gallery {
   margin-left: 0;
   list-style-type: none;
-  font-size: 44px; }
+  font-size: 58.2px; }
   @media only screen and (min-width: 64.063em) {
     ol.gallery span.year {
       display: block;
-      font-size: 15px;
-      line-height: 27px;
+      font-size: 19.8px;
+      line-height: 35.7px;
       font-weight: bold;
       padding-bottom: calc(42px - 19px); } }
   @media only screen and (min-width: 64.063em) {
@@ -77,33 +77,33 @@ ol.gallery {
       margin-right: 35px; }
 
 .by-series p {
-  font-size: 15px; }
+  font-size: 19.8px; }
 .by-series section h1 {
-  font-size: 27px;
-  line-height: 27px;
+  font-size: 35.7px;
+  line-height: 35.7px;
   padding-bottom: 27px;
   font-family: inherit;
   font-weight: bold; }
 .by-series section h2 {
-  font-size: 21px;
-  line-height: 21px;
+  font-size: 27.8px;
+  line-height: 27.8px;
   padding-top: 50px;
   padding-bottom: calc(42px - 19px);
   font-family: inherit;
   font-weight: bold; }
 
 .year {
-  font-size: 44px;
+  font-size: 58.2px;
   padding-bottom: calc(90px - 52px);
-  line-height: 44px; }
+  line-height: 58.2px; }
   @media only screen and (min-width: 64.063em) {
     .year {
-      font-size: 19px;
-      line-height: 27px;
+      font-size: 25.1px;
+      line-height: 35.7px;
       padding-bottom: calc(42px - 19px);
       font-weight: bolder; }
       .year .description {
-        font-size: 19px; } }
+        font-size: 25.1px; } }
 
 .navigation-controls:not(.dark-button-enabled) .next,
 .year ~ div.cell {
@@ -113,8 +113,8 @@ ol.gallery {
   padding-bottom: calc(90px - 52px); }
 
 .navigation-controls {
-  font-size: 52px;
-  line-height: 52px;
+  font-size: 68.8px;
+  line-height: 68.8px;
   padding-bottom: calc(65px - 52px); }
   .navigation-controls .next {
     text-align: right; }
@@ -143,7 +143,7 @@ ol.gallery {
       .painting img {
         margin-bottom: 0px; } }
   .painting p {
-    font-size: 24px; }
+    font-size: 31.7px; }
 
 /* "See in dark / See in light" toggle button */
 .toggle-dark {
@@ -154,16 +154,16 @@ ol.gallery {
   margin: 0;
   color: var(--link);
   width: 100%;
-  font-size: 52px;
-  line-height: 52px; }
+  font-size: 68.8px;
+  line-height: 68.8px; }
   .toggle-dark:hover, .toggle-dark:focus, .toggle-dark:active {
     background-color: transparent;
     outline: none;
     color: var(--link-hover); }
   @media only screen and (min-width: 64.063em) {
     .toggle-dark {
-      font-size: 15px;
-      line-height: 19px; } }
+      font-size: 19.8px;
+      line-height: 25.1px; } }
 
 .showcase header {
   margin-bottom: 21px; }
@@ -171,47 +171,47 @@ ol.gallery {
     .showcase header {
       margin-bottom: 23px; } }
   .showcase header h1 {
-    font-size: 27px;
+    font-size: 35.7px;
     font-family: inherit;
     font-weight: bold; }
   .showcase header h2 {
-    font-size: 21px;
+    font-size: 27.8px;
     font-family: inherit; }
   .showcase header h3 {
-    font-size: 13px;
+    font-size: 17.2px;
     font-family: inherit;
     padding-bottom: 60px;
     padding-top: 12px; }
   .showcase header h4 {
-    font-size: 13px;
+    font-size: 17.2px;
     font-family: inherit;
     font-weight: bolder; }
   .showcase header h5 {
-    font-size: 13px;
+    font-size: 17.2px;
     font-family: inherit;
     padding-bottom: 5px; }
   .showcase header h6 {
-    font-size: 15px;
+    font-size: 19.8px;
     font-weight: bold;
     font-family: inherit;
     padding-top: 55px; }
   @media only screen and (min-width: 64.063em) {
     .showcase header h1 {
-      font-size: 15px;
+      font-size: 19.8px;
       font-family: inherit;
       font-weight: bold; }
     .showcase header h2 {
-      font-size: 15px;
+      font-size: 19.8px;
       font-family: inherit; }
     .showcase header h4 {
-      font-size: 15px;
+      font-size: 19.8px;
       font-family: inherit;
       font-weight: bold; }
     .showcase header h5 {
-      font-size: 15px;
+      font-size: 19.8px;
       font-family: inherit; }
     .showcase header h6 {
-      font-size: 15px;
+      font-size: 19.8px;
       font-family: inherit;
       padding-top: 0px; } }
 
@@ -230,21 +230,27 @@ ol.gallery {
 .text .title {
   padding-bottom: calc(90px - 52px); }
   .text .title h1 {
-    font-size: 44px;
+    font-size: 58.2px;
     font-family: inherit;
-    line-height: 52px; }
+    line-height: 68.8px; }
 .text .title ~ div.cell {
   width: 150px; }
 .text p {
-  font-size: 13px; }
+  font-size: 17.2px; }
   @media only screen and (min-width: 64.063em) {
     .text p {
-      font-size: 15px; } }
+      font-size: 19.8px; } }
 
 body, html {
   height: auto; }
 
 body {
+  font-family: "Finlandica Headline", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+  font-size: 17.2px;
+  line-height: 175%;
   transition: background-color .5s ease;
   margin: var(--body-margin-mobile);
   background-color: var(--bg);
@@ -272,7 +278,7 @@ a {
     vertical-align: top; } }
 
 .site-title {
-  font-size: 27px;
+  font-size: 35.7px;
   display: block;
   padding-bottom: calc(63px - 30px); }
 
@@ -292,11 +298,11 @@ a {
 .index-title {
   display: block;
   padding-bottom: calc(110px - 52px);
-  line-height: 52px;
-  font-size: 42px; }
+  line-height: 68.8px;
+  font-size: 55.5px; }
 
 .index-menu {
-  font-size: 44px; }
+  font-size: 58.2px; }
 
 @media only screen {
   .index-gallery {

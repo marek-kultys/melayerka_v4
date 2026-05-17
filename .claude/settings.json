@@ -31,7 +31,9 @@
       "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://127.0.0.1:4000/04_karolina-sobanska-02.html)",
       "Bash(grep -E \"\\\\.\\(html|md\\)$\")",
       "Bash(curl -s http://127.0.0.1:4000/06_mars-01.html)",
-      "Bash(curl -s http://127.0.0.1:4000/01_3deers.html)"
+      "Bash(curl -s http://127.0.0.1:4000/01_3deers.html)",
+      "WebFetch(domain:fonts.google.com)",
+      "WebFetch(domain:fonts.googleapis.com)"
     ]
   }
 }

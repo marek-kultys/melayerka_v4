@@ -23,7 +23,7 @@ layout: default
           <p>({{ s.years }})</p>
           <div class="gallery-images">
             {% for work in works %}
-              <a href="{{ work.url | prepend: site.baseurl }}?ctx=series"><img src="{{ site.baseurl }}/images/{{ work.image_thumb }}"></a>
+              <a href="{{ work.url | prepend: site.baseurl }}"><img src="{{ site.baseurl }}/images/{{ work.image_thumb }}"></a>
             {% endfor %}
           </div>
         </section>

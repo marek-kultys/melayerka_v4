@@ -29,15 +29,10 @@ layout: default
     </div>
     <section class="navigation-controls table-layout{% if page.image_dark %} dark-button-enabled{% endif %}">
       <div class="cell previous">
-        {% if page.previous %}
-          <a class="nav-year" href="{{ page.previous.url | prepend: site.baseurl }}">&lt;</a>
-        {% else %}
-          <span class="nav-year">&lt;</span>
-        {% endif %}
         {% if series_prev %}
-          <a class="nav-series" href="{{ series_prev.url | prepend: site.baseurl }}?ctx=series" hidden>&lt;</a>
+          <a href="{{ series_prev.url | prepend: site.baseurl }}">&lt;</a>
         {% else %}
-          <span class="nav-series" hidden>&lt;</span>
+          <span>&lt;</span>
         {% endif %}
       </div>
       {% if page.image_dark %}
@@ -46,15 +41,10 @@ layout: default
       </div>
       {% endif %}
       <div class="cell next">
-        {% if page.next %}
-          <a class="nav-year" href="{{ page.next.url | prepend: site.baseurl }}">&gt;</a>
-        {% else %}
-          <span class="nav-year">&gt;</span>
-        {% endif %}
         {% if series_next %}
-          <a class="nav-series" href="{{ series_next.url | prepend: site.baseurl }}?ctx=series" hidden>&gt;</a>
+          <a href="{{ series_next.url | prepend: site.baseurl }}">&gt;</a>
         {% else %}
-          <span class="nav-series" hidden>&gt;</span>
+          <span>&gt;</span>
         {% endif %}
       </div>
     </section>
