@@ -35,7 +35,9 @@
       "WebFetch(domain:fonts.google.com)",
       "WebFetch(domain:fonts.googleapis.com)",
       "Bash(curl -s http://127.0.0.1:4000/by_year.html)",
-      "Bash(curl -s \"http://127.0.0.1:4000/04_juliette-drouet-01.html\")"
+      "Bash(curl -s \"http://127.0.0.1:4000/04_juliette-drouet-01.html\")",
+      "Bash(awk '{print $NF}')",
+      "Bash(cd \"/Users/marekkultys/Git Repos/melayerka_art\" && rm -v 0[0-9]_*.html 01_3dears.html show_0*.html show_1*.html bio.html contact.html exhibitions.html index.html statement.html gallery.html showcase.html links.html README.html 2>&1 | wc -l && echo \"files deleted\")"
     ]
   }
 }
