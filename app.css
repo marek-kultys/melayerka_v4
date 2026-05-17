@@ -260,6 +260,12 @@ body {
     body {
       margin: 62px 50px 90px 50px; } }
 
+p {
+  font-weight: 100; }
+
+.nav-hidden {
+  display: none !important; }
+
 a {
   text-decoration: none;
   color: var(--link);

@@ -20,6 +20,17 @@ layout: default
     {% endif %}
   {% endif %}
 {% endfor %}
+{% assign all_works = site.artworks | sort: "year" %}
+{% if page.previous %}
+  {% assign year_prev = page.previous %}
+{% else %}
+  {% assign year_prev = all_works | last %}
+{% endif %}
+{% if page.next %}
+  {% assign year_next = page.next %}
+{% else %}
+  {% assign year_next = all_works | first %}
+{% endif %}
 <main>
   {% include nav.html %}
   <div class="main-content">
@@ -33,11 +44,8 @@ layout: default
     </div>
     <section class="navigation-controls table-layout{% if page.image_dark %} dark-button-enabled{% endif %}">
       <div class="cell previous">
-        {% if series_prev %}
-          <a href="{{ series_prev.url | prepend: site.baseurl }}">&lt;</a>
-        {% else %}
-          <span>&lt;</span>
-        {% endif %}
+        <a class="nav-series" href="{{ series_prev.url | prepend: site.baseurl }}">&lt;</a>
+        <a class="nav-year nav-hidden" href="{{ year_prev.url | prepend: site.baseurl }}">&lt;</a>
       </div>
       {% if page.image_dark %}
       <div class="cell">
@@ -45,11 +53,8 @@ layout: default
       </div>
       {% endif %}
       <div class="cell next">
-        {% if series_next %}
-          <a href="{{ series_next.url | prepend: site.baseurl }}">&gt;</a>
-        {% else %}
-          <span>&gt;</span>
-        {% endif %}
+        <a class="nav-series" href="{{ series_next.url | prepend: site.baseurl }}">&gt;</a>
+        <a class="nav-year nav-hidden" href="{{ year_next.url | prepend: site.baseurl }}">&gt;</a>
       </div>
     </section>
     <section class="painting">

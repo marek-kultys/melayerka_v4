@@ -33,12 +33,12 @@ layout: default
           {% assign yr = work.year | append: "" %}
           {% unless years_seen contains yr %}
             {% assign years_seen = years_seen | append: yr | append: "," %}
-            {% assign year_works = sorted | where: "year", work.year %}
+            {% assign year_works = site.artworks | where: "year", work.year | sort: "name" %}
             <li>
               <span class="year"><a href="#">{{ work.year }}</a></span>
               <div class="gallery-images">
                 {% for w in year_works %}
-                  <a href="{{ w.url | prepend: site.baseurl }}" data-image="{{ site.baseurl }}/images/{{ w.image_thumb }}"></a>
+                  <a href="{{ w.url | prepend: site.baseurl }}?ctx=year" data-image="{{ site.baseurl }}/images/{{ w.image_thumb }}"></a>
                 {% endfor %}
               </div>
             </li>

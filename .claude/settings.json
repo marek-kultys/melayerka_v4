@@ -33,7 +33,9 @@
       "Bash(curl -s http://127.0.0.1:4000/06_mars-01.html)",
       "Bash(curl -s http://127.0.0.1:4000/01_3deers.html)",
       "WebFetch(domain:fonts.google.com)",
-      "WebFetch(domain:fonts.googleapis.com)"
+      "WebFetch(domain:fonts.googleapis.com)",
+      "Bash(curl -s http://127.0.0.1:4000/by_year.html)",
+      "Bash(curl -s \"http://127.0.0.1:4000/04_juliette-drouet-01.html\")"
     ]
   }
 }

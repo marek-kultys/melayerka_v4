@@ -61,7 +61,18 @@
   }
 })();
 
-/* ----- 3. by_year gallery: load thumbnail images on desktop -------- */
+/* ----- 3. by_year navigation context (ctx=year) -------------------- */
+(function () {
+  var ctx = new URLSearchParams(window.location.search).get('ctx');
+  if (ctx !== 'year') return;
+  document.querySelectorAll('.nav-series').forEach(function (el) { el.classList.add('nav-hidden'); });
+  document.querySelectorAll('.nav-year').forEach(function (el) {
+    el.classList.remove('nav-hidden');
+    el.href = el.href + '?ctx=year';
+  });
+})();
+
+/* ----- 4. by_year gallery: load thumbnail images on desktop -------- */
 (function () {
   var pathname = window.location.pathname;
   if (!/by_year/.test(pathname) && !/gallery/.test(pathname)) return;
