@@ -1,0 +1,19 @@
+---
+layout: default
+---
+<main>
+  {% include nav.html %}
+  <div class="main-content">
+    <article class="text">
+      <div class="hide-for-large-up">
+        <div class="menu-trigger hide-for-large-up"><a href="{{ site.baseurl }}/">Menu</a></div>
+        <section class="showcase">
+          <header>
+            <h1>{{ page.title }}</h1>
+          </header>
+        </section>
+      </div>
+      {{ content }}
+    </article>
+  </div>
+</main>

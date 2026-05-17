@@ -40,12 +40,7 @@ body {
   color: #222;
   padding: 0;
   margin: 0;
-  font-family: "letter-gothic-std";
-  font-weight: normal;
-  font-style: normal;
-  /*copyright font size*/
   font-size: 13px;
-  line-height: 150%;
   position: relative;
   cursor: auto; }
 

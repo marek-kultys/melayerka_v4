@@ -1,0 +1,66 @@
+---
+layout: default
+---
+{% assign series_works = site.artworks | where: "series", page.series | sort: "name" %}
+{% assign series_prev = nil %}
+{% assign series_next = nil %}
+{% for work in series_works %}
+  {% if work.name == page.name %}
+    {% if forloop.first %}
+      {% assign series_prev = series_works | last %}
+    {% else %}
+      {% assign prev_idx = forloop.index0 | minus: 1 %}
+      {% assign series_prev = series_works[prev_idx] %}
+    {% endif %}
+    {% if forloop.last %}
+      {% assign series_next = series_works | first %}
+    {% else %}
+      {% assign next_idx = forloop.index0 | plus: 1 %}
+      {% assign series_next = series_works[next_idx] %}
+    {% endif %}
+  {% endif %}
+{% endfor %}
+{% assign all_works = site.artworks | sort: "year" %}
+{% if page.previous %}
+  {% assign year_prev = page.previous %}
+{% else %}
+  {% assign year_prev = all_works | last %}
+{% endif %}
+{% if page.next %}
+  {% assign year_next = page.next %}
+{% else %}
+  {% assign year_next = all_works | first %}
+{% endif %}
+<main>
+  {% include nav.html %}
+  <div class="main-content">
+    <div class="table-layout">
+      <div class="cell year">{{ page.title }}
+        <p class="description show-for-large-up">{{ page.dimensions }}, {{ page.medium }} ({{ page.year }})</p>
+      </div>
+      <div class="cell painting menu-wrapper">
+        <div class="menu-trigger hide-for-large-up"><a href="{{ site.baseurl }}/">Menu</a></div>
+      </div>
+    </div>
+    <section class="navigation-controls table-layout{% if page.image_dark %} dark-button-enabled{% endif %}">
+      <div class="cell previous">
+        <a class="nav-series" href="{{ series_prev.url | prepend: site.baseurl }}">&lt;</a>
+        <a class="nav-year nav-hidden" href="{{ year_prev.url | prepend: site.baseurl }}">&lt;</a>
+      </div>
+      {% if page.image_dark %}
+      <div class="cell">
+        <button class="toggle-dark" style="font-family:inherit">{% if page.dark_default %}See in light{% else %}See in dark{% endif %}</button>
+      </div>
+      {% endif %}
+      <div class="cell next">
+        <a class="nav-series" href="{{ series_next.url | prepend: site.baseurl }}">&gt;</a>
+        <a class="nav-year nav-hidden" href="{{ year_next.url | prepend: site.baseurl }}">&gt;</a>
+      </div>
+    </section>
+    <section class="painting">
+      <img src="{{ site.baseurl }}/images/{{ page.image_light }}"{% if page.image_dark %} data-dark="{{ site.baseurl }}/images/{{ page.image_dark }}"{% endif %}>
+      <p class="description hide-for-large-up">{{ page.dimensions }}, {{ page.medium }} ({{ page.year }})</p>
+    </section>
+    {% include footer.html %}
+  </div>
+</main>
