@@ -2,14 +2,14 @@
    melayerka.com — app.js
    ===================================================================== */
 
-/* ----- 1. localStorage colour-scheme persistence ------------------- */
+/* ----- 1. Mars series light/dark state across page navigations ----- */
 (function () {
-  var stored = localStorage.getItem('colorScheme');
-  // Only apply stored preference if the page hasn't already set dark_default
-  // (dark_default pages start with class="dark" on <body> via the layout)
-  if (stored === 'dark' && !document.body.classList.contains('dark')) {
-    document.body.classList.add('dark');
-  } else if (stored === 'light' && document.body.classList.contains('dark')) {
+  var isMarsPage = /\/06_/.test(window.location.pathname);
+  if (!isMarsPage) {
+    sessionStorage.removeItem('marsColorScheme');
+    return;
+  }
+  if (sessionStorage.getItem('marsColorScheme') === 'light') {
     document.body.classList.remove('dark');
   }
 })();
@@ -29,7 +29,7 @@
 
   btn.addEventListener('click', function () {
     var isDark = document.body.classList.toggle('dark');
-    localStorage.setItem('colorScheme', isDark ? 'dark' : 'light');
+    sessionStorage.setItem('marsColorScheme', isDark ? 'dark' : 'light');
     updateButtonText();
 
     if (!painting) return;

@@ -6,14 +6,18 @@ layout: default
 {% assign series_next = nil %}
 {% for work in series_works %}
   {% if work.name == page.name %}
-    {% unless forloop.first %}
+    {% if forloop.first %}
+      {% assign series_prev = series_works | last %}
+    {% else %}
       {% assign prev_idx = forloop.index0 | minus: 1 %}
       {% assign series_prev = series_works[prev_idx] %}
-    {% endunless %}
-    {% unless forloop.last %}
+    {% endif %}
+    {% if forloop.last %}
+      {% assign series_next = series_works | first %}
+    {% else %}
       {% assign next_idx = forloop.index0 | plus: 1 %}
       {% assign series_next = series_works[next_idx] %}
-    {% endunless %}
+    {% endif %}
   {% endif %}
 {% endfor %}
 <main>
