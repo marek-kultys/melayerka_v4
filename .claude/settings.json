@@ -1,0 +1,37 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(bundle exec *)",
+      "Bash(rbenv version *)",
+      "Read(//Users/marekkultys/.rbenv/versions/**)",
+      "Read(//usr/local/lib/**)",
+      "Bash(rbenv local *)",
+      "Bash(RBENV_VERSION=system rbenv which ruby)",
+      "Bash(/usr/bin/ruby --version)",
+      "Bash(/opt/homebrew/opt/ruby/bin/ruby --version)",
+      "Read(//opt/homebrew/Cellar/ruby/3.4.4/bin/**)",
+      "Bash(/opt/homebrew/opt/ruby/bin/bundle exec *)",
+      "Bash(rm -f Gemfile.lock)",
+      "Bash(PATH=/opt/homebrew/opt/ruby/bin:__TRACKED_VAR__ bundle config set --local path vendor/bundle)",
+      "Bash(PATH=/opt/homebrew/opt/ruby/bin:__TRACKED_VAR__ bundle install)",
+      "Bash(PATH=/opt/homebrew/opt/ruby/bin:__TRACKED_VAR__ bundle exec jekyll build --baseurl '')",
+      "Bash(PATH=/opt/homebrew/opt/ruby/bin:__TRACKED_VAR__ bundle exec jekyll serve --baseurl '' --port 4000)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:4000/)",
+      "Bash(curl -s http://localhost:4000/)",
+      "Bash(curl -s http://localhost:4000/06_mars-01.html)",
+      "Bash(curl -s http://localhost:4000/01_3deers.html)",
+      "Bash(curl -s http://localhost:4000/by_series.html)",
+      "Bash(curl -s http://localhost:4000/by_year.html)",
+      "Bash(curl -s http://localhost:4000/show_19.html)",
+      "Bash(pkill -f \"jekyll serve\")",
+      "Bash(python3 -)",
+      "Bash(PATH=/opt/homebrew/opt/ruby/bin:__TRACKED_VAR__ bundle exec jekyll serve --baseurl '' --detach)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://127.0.0.1:4000/06_mars-01.html)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://127.0.0.1:4000/show_19.html)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://127.0.0.1:4000/04_karolina-sobanska-02.html)",
+      "Bash(grep -E \"\\\\.\\(html|md\\)$\")",
+      "Bash(curl -s http://127.0.0.1:4000/06_mars-01.html)",
+      "Bash(curl -s http://127.0.0.1:4000/01_3deers.html)"
+    ]
+  }
+}

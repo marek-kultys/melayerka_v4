@@ -1,0 +1,42 @@
+---
+layout: default
+---
+<main>
+  {% include nav.html %}
+  <div class="main-content">
+    <div class="menu-trigger hide-for-large-up"><a href="{{ site.baseurl }}/exhibitions.html">Back</a></div>
+    <section class="showcase">
+      <header>
+        <h4>{{ page.title }}</h4>
+        {% if page.type %}<h5>{{ page.type }}</h5>{% endif %}
+        {% if page.venue %}
+          {% if page.venue_url %}
+            <h5><a href="{{ page.venue_url }}" target="_blank">{{ page.venue }}<br>{{ page.dates }}</a></h5>
+          {% else %}
+            <h5>{{ page.venue }}<br>{{ page.dates }}</h5>
+          {% endif %}
+        {% endif %}
+        {% if page.description %}<h5>{{ page.description }}</h5>{% endif %}
+        {% if page.links %}
+          {% for link in page.links %}
+            <h5><a href="{{ link.url }}" target="_blank">{{ link.text }}</a></h5>
+          {% endfor %}
+        {% endif %}
+      </header>
+      {% if page.images %}
+        {% for img in page.images %}
+          <img src="{{ site.baseurl }}/images/{{ img.file }}">
+          <br>
+        {% endfor %}
+      {% else %}
+        {{ content }}
+      {% endif %}
+      <footer class="bottom-menu show-for-large-up">
+        <div class="menu-trigger hide-for-large-up"><a href="{{ site.baseurl }}/">Menu</a></div>
+      </footer>
+    </section>
+    <div class="hide-for-small">
+      {% include footer.html %}
+    </div>
+  </div>
+</main>

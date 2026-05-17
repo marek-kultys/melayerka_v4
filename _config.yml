@@ -1,0 +1,61 @@
+title: Mela Yerka
+baseurl: /art
+url: https://melayerka.com
+
+collections:
+  artworks:
+    output: true
+    sort_by: year
+    permalink: /:name.html
+  exhibitions:
+    output: true
+    permalink: /:name.html
+  pages:
+    output: true
+
+defaults:
+  - scope:
+      path: "_artworks"
+      type: artworks
+    values:
+      layout: artwork
+  - scope:
+      path: "_exhibitions"
+      type: exhibitions
+    values:
+      layout: exhibition
+  - scope:
+      path: "_pages"
+      type: pages
+    values:
+      layout: text
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - PLANNING.md
+  - README.md
+  - templates/
+  - design/
+  - dist/
+  - _notes/
+  - images-NONoptimised/
+  - vendor/
+  - "*.map"
+  - extract_artworks.py
+  # Legacy static HTML files superseded by Jekyll collection output
+  - "0[0-9]_*.html"
+  - "show_*.html"
+  - gallery.html
+  - showcase.html
+  - bio.html
+  - statement.html
+  - contact.html
+  - exhibitions.html
+  - links.html
+  - index.html
+  - README.html
+  - style.new.css
+  - app-dark.css
+  - app-dark.css.map
+  - google565ae11e075e8b6a.html

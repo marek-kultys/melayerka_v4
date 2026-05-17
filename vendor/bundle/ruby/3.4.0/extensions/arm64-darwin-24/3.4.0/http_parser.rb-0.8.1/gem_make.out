@@ -1,0 +1,24 @@
+current directory: /Users/marekkultys/Git Repos/melayerka_art/vendor/bundle/ruby/3.4.0/gems/http_parser.rb-0.8.1/ext/ruby_http_parser
+/opt/homebrew/opt/ruby/bin/ruby extconf.rb
+creating Makefile
+
+current directory: /Users/marekkultys/Git Repos/melayerka_art/vendor/bundle/ruby/3.4.0/gems/http_parser.rb-0.8.1/ext/ruby_http_parser
+make DESTDIR\= sitearchdir\=./.gem.20260517-82009-1ku40d sitelibdir\=./.gem.20260517-82009-1ku40d clean
+
+current directory: /Users/marekkultys/Git Repos/melayerka_art/vendor/bundle/ruby/3.4.0/gems/http_parser.rb-0.8.1/ext/ruby_http_parser
+make DESTDIR\= sitearchdir\=./.gem.20260517-82009-1ku40d sitelibdir\=./.gem.20260517-82009-1ku40d
+compiling ruby_http_parser.c
+ruby_http_parser.c:373:17: warning: comparison of integers of different signs: 'size_t' (aka 'unsigned long') and 'long' [-Wsign-compare]
+  373 |     if (nparsed < len)
+      |         ~~~~~~~ ^ ~~~
+1 warning generated.
+compiling ryah_http_parser.c
+linking shared-object ruby_http_parser.bundle
+ld: warning: search path '/opt/homebrew/Cellar/openssl@3/3.5.0/lib' not found
+
+current directory: /Users/marekkultys/Git Repos/melayerka_art/vendor/bundle/ruby/3.4.0/gems/http_parser.rb-0.8.1/ext/ruby_http_parser
+make DESTDIR\= sitearchdir\=./.gem.20260517-82009-1ku40d sitelibdir\=./.gem.20260517-82009-1ku40d install
+/usr/bin/install -c -m 0755 ruby_http_parser.bundle ./.gem.20260517-82009-1ku40d
+
+current directory: /Users/marekkultys/Git Repos/melayerka_art/vendor/bundle/ruby/3.4.0/gems/http_parser.rb-0.8.1/ext/ruby_http_parser
+make DESTDIR\= sitearchdir\=./.gem.20260517-82009-1ku40d sitelibdir\=./.gem.20260517-82009-1ku40d clean

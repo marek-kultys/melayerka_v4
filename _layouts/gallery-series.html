@@ -1,0 +1,36 @@
+---
+layout: default
+---
+<main>
+  {% include nav.html %}
+  <div class="main-content">
+    <div class="menu-trigger hide-for-large-up"><a href="{{ site.baseurl }}/">Menu</a></div>
+    <article class="by-series">
+      {% for s in site.data.series %}
+        {% assign works = site.artworks | where: "series", s.id | sort: "name" %}
+        <section>
+          {% if forloop.first %}
+            <h1 id="{{ s.id | slugify }}">{{ s.name }}</h1>
+          {% else %}
+            <h2 id="{{ s.id | slugify }}">{{ s.name }}</h2>
+          {% endif %}
+          <p>{{ s.description }}</p>
+          {% if s.links %}
+            {% for link in s.links %}
+              <p><a href="{{ link.url }}" target="_blank">{{ link.text }}</a></p>
+            {% endfor %}
+          {% endif %}
+          <p>({{ s.years }})</p>
+          <div class="gallery-images">
+            {% for work in works %}
+              <a href="{{ work.url | prepend: site.baseurl }}?ctx=series"><img src="{{ site.baseurl }}/images/{{ work.image_thumb }}"></a>
+            {% endfor %}
+          </div>
+        </section>
+      {% endfor %}
+    </article>
+    <div class="hide-for-small">
+      {% include footer.html %}
+    </div>
+  </div>
+</main>

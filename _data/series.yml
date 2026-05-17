@@ -1,0 +1,35 @@
+# Series listed in the order they appear on by_series.html
+# id must match the "series" front matter field in _artworks/
+
+- id: Mars
+  name: Mars
+  years: "2013 – 2014"
+  description: "This series is about the human drive to prove oneself and explore. The paintings are inspired by the planned colonisation of Mars — a journey not into the unknown, but for the sake of experiencing and seeing more. The Martian landscapes are not immediately discernible in daylight, but once covered in darkness, a vast and mysterious extraterrestrial landscape is revealed. Light paints the picture here: flat, abstract surfaces are defined by reflected daylight, while dramatic, rocky vistas are shaped by the glowing light emitted from the painting. The landscapes from Mars deceive the viewer's visual perception as rocks and mountains are made of light — appearing in the vacuum and conforming to some unearthly laws of space."
+
+- id: Feral Children
+  name: Feral Children
+  years: "2012 – 2013"
+  description: "How does one experience the world when they lack the capacity of abstract thinking? Is our experience of the world \"natural\" or \"artificial\" — \"abstract\"? Such questions have always been asked from the scientific and philosophic perspective. Polish painter Mela Yerka sees the death of painting as an opportunity for this medium to ask these questions from a new standpoint. Painting, she says, is always abstract. It is as artificial as can be. It is not part of this world. Therefore it is an ideal medium to question precisely this world."
+  links:
+    - text: "From a review by Cristina Bogdan."
+      url: "http://glassmag.users22.interdns.co.uk/forum/blog_post.asp?TID=5143"
+
+- id: Women of the 19th Century
+  name: Women of the 19th Century
+  years: "2011 – present"
+  description: "Here I explore the stories of high society women living in the times of Romanticism who were lovers of famous contemporary men: Balzac, Chopin, Hugo, Liszt, Byron. They created a peculiar web of sexual relationships where each woman (among them: George Sand, Rachel Felix, Lola Montez) was linked to another through their mutual lovers. Thus, a constellation of lovers had emerged—mysterious, complex and entangled."
+
+- id: Grimm Tales
+  name: Grimm Tales
+  years: "2009 – 2012"
+  description: "This ongoing series of paintings is based on the Grimms' tales. Grimms' everlasting motifs, rich Pan-European material and incorrect morals make an inexhaustible source of inspiration. I juxtapose the tradition of storytelling with the rich history of painting in order to reintroduce distant stories and values to our modern cynical world."
+
+- id: Dead
+  name: Dead
+  years: "2008 – 2009"
+  description: "\"Be fruitful, and multiply, and replenish the earth, and subdue it.\" Those are the trigger words for the series. Having become true, this sentence shows an ethical problem—how far can we go? Humanity has got indeed a destructive power..."
+
+- id: Beautiful Painting of War
+  name: Beautiful Painting of War
+  years: "2007 – 2008"
+  description: "This is a paean for cultural, destructive, powerful and female. The divagation on beautiful is never to be over as we would never stop admiring ourselves."
