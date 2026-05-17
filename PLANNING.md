@@ -18,7 +18,7 @@ The goal is to reflect this unified identity online while keeping each business 
 
 ## Current State of the Repos
 
-### melayerka_v4 (`melayerka.com`)
+### melayerka_art (`melayerka.com`)
 - Raw static HTML, no build system
 - 107 hand-coded HTML files (73 artwork pages across 6 series + ~34 other pages)
 - Foundation CSS + jQuery 1.10.2
@@ -60,9 +60,9 @@ melayerka.com/gardens  ← new repo (gardening business)
 
 ### Conclusion: Do it as part of the hub migration
 
-Rebuilding in Jekyll is **highly feasible** and is the right call to make alongside the `/art` subpath move, rather than as a separate project. Reasons:
+Rebuilding melayerka_art in Jekyll is **highly feasible** and is the right call to make alongside the `/art` subpath move, rather than as a separate project. Reasons:
 
-1. **The move forces a path update anyway.** Moving to `melayerka.com/art` requires updating relative paths across all 107 files in the current static HTML version. In Jekyll, setting `baseurl: /art` in `_config.yml` handles this automatically.
+1. **The move forces a path update anyway.** Moving to `melayerka.com/art` requires updating relative paths across all 107 files in the current static HTML version (melayerka_art). In Jekyll, setting `baseurl: /art` in `_config.yml` handles this automatically.
 
 2. **The structure is already template-shaped.** Every artwork page shares identical `<head>`, nav, and footer — only title, dimensions, year, image filename, and prev/next links vary. The existing `templates/` directory confirms this was the original intent.
 
