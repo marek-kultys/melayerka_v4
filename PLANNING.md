@@ -89,10 +89,25 @@ Prev/next navigation between artwork pages. Jekyll collections order by filename
 
 ---
 
+## Decisions
+
+### Hub repo
+A new dedicated repo (e.g. `melayerka-hub` or `melayerka-www`) will serve the hub landing page. It is conceptually separate from all three businesses — a small directory page, not part of any sub-site — and should be independently deployable. Each sub-site repo uses its own `baseurl`. If GitHub Pages subpath routing proves fiddly, Netlify is a clean fallback for multi-repo-to-subpath configuration.
+
+### Hub linking to sub-sites
+All three sub-site links on the hub open with `target="_blank"`. Each sub-site has its own distinct design, navigation, and topic and should be experienced as a standalone property. No "back to hub" navigation is needed on any of the three sub-sites.
+
+### Domain strategy
+- Keep `melayerka.com` as the single domain for all three sub-sites.
+- Abandon `trowelandlime.com` — but first set up a 301 redirect from `trowelandlime.com → melayerka.com/murals` and keep it running for 6–12 months before letting the domain expire, to preserve existing backlinks and bookmarks.
+
+---
+
 ## Next Steps
 
-- [ ] Design the hub landing page for `melayerka.com`
+- [ ] Design the hub landing page for `melayerka.com` (new dedicated repo)
 - [ ] Set up new repo for the gardening business (Jekyll, modelled on trowel-and-lime)
 - [ ] Rebuild melayerka_v4 in Jekyll with `baseurl: /art`
 - [ ] Migrate trowel-and-lime to serve under `melayerka.com/murals`
+- [ ] Set up 301 redirect from `trowelandlime.com` to `melayerka.com/murals`
 - [ ] Update DNS / GitHub Pages config for all three paths
