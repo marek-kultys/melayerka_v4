@@ -23,11 +23,6 @@ layout: default
         {% endfor %}
       </header>
     </section>
-    <footer class="bottom-menu show-for-large-up">
-      <div class="menu-trigger hide-for-large-up"><a href="{{ site.baseurl }}/">Menu</a></div>
-    </footer>
-    <div class="hide-for-small">
-      {% include footer.html %}
-    </div>
+    {% include footer.html %}
   </div>
 </main>
