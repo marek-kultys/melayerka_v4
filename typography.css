@@ -34,7 +34,7 @@ body {
   font-optical-sizing: auto;
   font-weight: 200;
   font-style: normal;
-  font-size: 17.2px;
+  font-size: 18px;
   line-height: 150%;
   color: var(--text);
   -webkit-text-size-adjust: 100%;
@@ -67,7 +67,7 @@ a:hover {
    Site title ("Mela Yerka") — desktop sidebar, all pages
    ---------------------------------------------------------------- */
 .site-title {
-  font-size: 35.7px;
+  font-size: 36px;
 }
 
 
@@ -76,15 +76,15 @@ a:hover {
    _includes/nav.html, all pages
    ---------------------------------------------------------------- */
 ul.menu {
-  font-size: 35.7px;
+  font-size: 36px;
 }
 @media only screen and (min-width: 64.063em) {
   ul.menu {
-    font-size: 19.8px;
+    font-size: 21px;
   }
 }
 ul.menu ul {
-  font-size: 19.8px;
+  font-size: 21px;
 }
 ul.menu a {
   color: var(--link);
@@ -98,7 +98,7 @@ ul.menu a:hover {
   font-size: inherit;
 }
 ul.menu .series {
-  font-size: 19.8px;
+  font-size: 21px;
   font-weight: regular;
 }
 
@@ -107,7 +107,7 @@ ul.menu .series {
    Mobile "Menu" trigger link — artwork and gallery pages
    _layouts/artwork.html, gallery-series.html, gallery-year.html
    ---------------------------------------------------------------- */
-.menu-trigger {
+.menu-trigger { /* Menu button - mobile only */
   font-size: 32px;
   line-height: 32px;
   text-align: right;
@@ -118,18 +118,18 @@ ul.menu .series {
    Artwork title and metadata line (dimensions, medium, year)
    _layouts/artwork.html
    ---------------------------------------------------------------- */
-.year {
+.year { /* Artwork title - mobile only */
   font-size: 32px;
   line-height: 32px;
+  font-weight: bold;
 }
-@media only screen and (min-width: 64.063em) {
+@media only screen and (min-width: 64.063em) { /* Artwork title - desktop only */
   .year {
-    font-size: 25.1px;
-    line-height: 35.7px;
-    font-weight: bolder;
+    font-size: 24px;
+    font-weight: bold;
   }
-  .year .description {
-    font-size: 25.1px;
+  .year .description { /* Artwork metadata - desktop only */
+    font-size: 21px;
   }
 }
 
@@ -139,7 +139,7 @@ ul.menu .series {
    _layouts/artwork.html
    ---------------------------------------------------------------- */
 .painting p {
-  font-size: 32px;
+  font-size: 21px;
 }
 
 
@@ -179,8 +179,8 @@ ul.menu .series {
 }
 @media only screen and (min-width: 64.063em) {
   .toggle-dark {
-    font-size: 19.8px;
-    line-height: 25.1px;
+    font-size: 21px;
+    line-height: 24px;
   }
 }
 
@@ -190,12 +190,12 @@ ul.menu .series {
    _layouts/gallery-year.html, by_year.html
    ---------------------------------------------------------------- */
 ol.gallery {
-  font-size: 58.2px;
+  font-size: 56px;
 }
 @media only screen and (min-width: 64.063em) {
   ol.gallery span.year {
-    font-size: 19.8px;
-    line-height: 35.7px;
+    font-size: 21px;
+    line-height: 36px;
     font-weight: bold;
   }
 }
@@ -205,18 +205,12 @@ ol.gallery {
    By series gallery — series headings and descriptions
    _layouts/gallery-series.html, by_series.html
    ---------------------------------------------------------------- */
-.by-series p {
-  font-size: 19.8px;
+.by-series p { /* Series descriptions, desktop only */
+  font-size: 21px; 
 }
-.by-series section h1 {
-  font-size: 35.7px;
-  line-height: 35.7px;
-  font-family: inherit;
-  font-weight: bold;
-}
-.by-series section h2 {
-  font-size: 27.8px;
-  line-height: 27.8px;
+.by-series section h2 { /* Series headings */
+  font-size: 36px;
+  line-height: 36px;
   font-family: inherit;
   font-weight: bold;
 }
@@ -224,76 +218,63 @@ ol.gallery {
 
 /* ----------------------------------------------------------------
    Exhibition pages — header text hierarchy
-   _layouts/exhibition.html, _exhibitions/show_*.md
+   _layouts/exhibition.html, _layouts/mini-series.html,
+   _exhibitions/show_*.md
    ---------------------------------------------------------------- */
-.showcase header h1 {
-  font-size: 35.7px;
+.showcase header h1 { /* Series name - mobile only */
+  font-size: 36px;
   font-family: inherit;
   font-weight: bold;
 }
-.showcase header h2 {
-  font-size: 27.8px;
+.showcase header h2 { /* Series year - mobile only */
+  font-size: 28px;
   font-family: inherit;
 }
-.showcase header h3 {
-  font-size: 17.2px;
+.showcase header h3 { /* Series summary - mobile only */
+  font-size: 21px;
   font-family: inherit;
 }
-.showcase header h4 {
-  font-size: 17.2px;
+.showcase header h4 { /* Artwork titles — mobile only */
+  font-size: 28px;
   font-family: inherit;
   font-weight: bolder;
 }
-.showcase header h5 {
-  font-size: 17.2px;
-  font-family: inherit;
-}
-.showcase header h6 {
-  font-size: 19.8px;
-  font-weight: bold;
+.showcase header h5 { /* Artwork metadata — mobile only */
+  font-size: 21px;
   font-family: inherit;
 }
 @media only screen and (min-width: 64.063em) {
   .showcase header h1 {
-    font-size: 19.8px;
+    font-size: 36px;
     font-family: inherit;
     font-weight: bold;
   }
   .showcase header h2 {
-    font-size: 19.8px;
+    font-size: 21px;
     font-family: inherit;
   }
-  .showcase header h4 {
-    font-size: 19.8px;
+  .showcase header h4 { /* Artwork titles — _layouts/mini-series.html */
+    font-size: 21px;
     font-family: inherit;
     font-weight: bold;
   }
-  .showcase header h5 {
-    font-size: 19.8px;
-    font-family: inherit;
-  }
-  .showcase header h6 {
-    font-size: 19.8px;
+  .showcase header h5 { /* Artwork metadata — _layouts/mini-series.html */
+    font-size: 18px;
     font-family: inherit;
   }
 }
 
 
 /* ----------------------------------------------------------------
-   Text / prose pages — page title and body copy
+   Text / prose pages — body copy
    _layouts/text.html, _pages/bio.md, statement.md, contact.md
    ---------------------------------------------------------------- */
-.text .title h1 {
-  font-size: 58.2px;
-  font-family: inherit;
-  line-height: 68.8px;
-}
 .text p {
-  font-size: 17.2px;
+  font-size: 18px;
 }
 @media only screen and (min-width: 64.063em) {
   .text p {
-    font-size: 19.8px;
+    font-size: 21px;
   }
 }
 
@@ -303,9 +284,9 @@ ol.gallery {
    _pages/index.md, _layouts/home.html
    ---------------------------------------------------------------- */
 .index-title {
-  font-size: 55.5px;
-  line-height: 68.8px;
+  font-size: 48px;  /* Mela Yerka, mobile */
+  line-height: 48px;
 }
 .index-menu {
-  font-size: 58.2px;
+  font-size: 48px;
 }

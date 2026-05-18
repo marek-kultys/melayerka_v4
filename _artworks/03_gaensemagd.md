@@ -2,7 +2,7 @@
 permalink: /03_gaensemagd.html
 title: "Die G&auml;nsemagd"
 year: 2010
-dimensions: "54×40 cm"
+dimensions: "54 × 40 cm"
 medium: "oil on linen"
 series: "Grimm Tales"
 image_light: "03_L_gaensemagd.jpg"

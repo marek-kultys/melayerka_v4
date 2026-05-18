@@ -11,12 +11,11 @@
    ---------------------------------------------------------------- */
 :root {
   --bg:                #ffffff;
-  --body-margin-mobile: 50px 20px 100px 20px;
+  --body-margin-mobile: 15px 20px 100px 20px;
 }
 
 body.dark {
   --bg:                #212121;
-  --body-margin-mobile: 100px 50px 90px 50px;
 }
 
 
@@ -34,7 +33,7 @@ ul.menu ul {
 }
 
 .menu-trigger {
-  padding-bottom: 66px;
+  padding-bottom: 20px;
   padding-left: 40px;
 }
 
@@ -79,12 +78,11 @@ ol.gallery {
 /* ----------------------------------------------------------------
    By series gallery — section spacing
    ---------------------------------------------------------------- */
-.by-series section h1 {
-  padding-bottom: 27px;
-}
 .by-series section h2 {
-  padding-top: 50px;
   padding-bottom: calc(42px - 19px);
+}
+.by-series section:not(:first-child) h2 {
+  padding-top: 50px;
 }
 
 
@@ -100,13 +98,8 @@ ol.gallery {
   }
 }
 
-.navigation-controls:not(.dark-button-enabled) .next,
-.year ~ div.cell {
+.navigation-controls:not(.dark-button-enabled) .next {
   width: 150px;
-}
-
-.painting.menu-wrapper .menu-trigger {
-  padding-bottom: calc(90px - 52px);
 }
 
 
@@ -185,19 +178,13 @@ ol.gallery {
   }
 }
 .showcase header h3 {
-  padding-bottom: 60px;
   padding-top: 12px;
+}
+.showcase header h3:last-of-type {
+  padding-bottom: 60px;
 }
 .showcase header h5 {
   padding-bottom: 5px;
-}
-.showcase header h6 {
-  padding-top: 55px;
-}
-@media only screen and (min-width: 64.063em) {
-  .showcase header h6 {
-    padding-top: 0px;
-  }
 }
 .showcase img {
   margin-bottom: 60px;
@@ -214,17 +201,6 @@ ol.gallery {
 }
 .showcase .bottom-menu .menu-trigger {
   padding-bottom: calc(80px - 52px);
-}
-
-
-/* ----------------------------------------------------------------
-   Text / prose pages — title cell spacing
-   ---------------------------------------------------------------- */
-.text .title {
-  padding-bottom: calc(90px - 52px);
-}
-.text .title ~ div.cell {
-  width: 150px;
 }
 
 
@@ -303,6 +279,12 @@ body {
 /* ----------------------------------------------------------------
    Homepage layout
    ---------------------------------------------------------------- */
+@media only screen and (max-width: 64em) {
+  .index-feature {
+    margin-top: 50px;
+  }
+}
+
 .index-title {
   display: block;
   padding-bottom: calc(110px - 52px);
@@ -319,19 +301,6 @@ body {
   }
 }
 
-
-/* ----------------------------------------------------------------
-   Inline layout helpers
-   ---------------------------------------------------------------- */
-.inline {
-  display: inline-block;
-}
-.inline.bigger {
-  width: calc(100% - 155px);
-}
-.inline.smaller {
-  width: 150px;
-}
 
 .table-layout {
   display: table;

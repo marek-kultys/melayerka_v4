@@ -2,7 +2,7 @@
 permalink: /05_ivan-mishukov-01.html
 title: "Ivan Mishukov"
 year: 2012
-dimensions: "120×80 cm"
+dimensions: "120 × 80 cm"
 medium: "egg tempera and acrylic on linen"
 series: "Feral Children"
 image_light: "05_L_ivan-mishukov-01.jpg"

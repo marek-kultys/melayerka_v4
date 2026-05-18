@@ -15,7 +15,8 @@ layout: default
         {% assign shows = site.exhibitions | sort: "name" | reverse %}
         {% for show in shows %}
           <h4><a href="{{ show.url | prepend: site.baseurl }}">{{ show.title }}</a></h4>
-          <h5><a href="{{ show.url | prepend: site.baseurl }}">{{ show.venue }}<br>{{ show.dates }}</a></h5>
+          <h5><a href="{{ show.url | prepend: site.baseurl }}">{{ show.venue }}</a></h5>
+          <h5><a href="{{ show.url | prepend: site.baseurl }}">{{ show.dates }}</a></h5>
           {% if show.thumbnail %}
             <a href="{{ show.url | prepend: site.baseurl }}"><img src="{{ site.baseurl }}/images/{{ show.thumbnail }}"></a>
           {% endif %}

@@ -11,15 +11,15 @@ layout: default
       <header>
         <h1>{{ series_data.name }}</h1>
         <h2>{{ series_data.years }}</h2>
-        <h3>{{ series_data.description }}<br><br>
+        <h3>{{ series_data.description }}
           {% if series_data.links %}
-            {% for link in series_data.links %}<a href="{{ link.url }}" target="_blank">{{ link.text }}</a><br>{% endfor %}
+            {% for link in series_data.links %}<a href="{{ link.url }}" target="_blank">{{ link.text }}</a>{% endfor %}
           {% endif %}
         </h3>
         {% for work in works %}
-          <h4>"{{ work.title }}"</h4>
-          <h5>{{ work.dimensions }}, {{ work.medium }} ({{ work.year }})</h5>
-          <a href="{{ work.url | prepend: site.baseurl }}?ctx=series"><img src="{{ site.baseurl }}/images/{{ work.image_light }}"></a>
+          <h4>{{ work.title }}</h4>
+          <h5>{{ work.dimensions }}, {{ work.medium }}, {{ work.year }}</h5>
+          <a href="{{ work.url | prepend: site.baseurl }}?ctx=series"><img src="{{ site.baseurl }}/images/{% if work.image_dark %}{{ work.image_dark }}{% else %}{{ work.image_light }}{% endif %}"></a>
         {% endfor %}
       </header>
     </section>
