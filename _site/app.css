@@ -207,11 +207,6 @@ ol.gallery {
 /* ----------------------------------------------------------------
    Body and root layout
    ---------------------------------------------------------------- */
-body,
-html {
-  height: auto;
-}
-
 body {
   transition: background-color .5s ease;
   margin: var(--body-margin-mobile);
