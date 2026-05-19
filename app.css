@@ -1,333 +1,306 @@
-/* CSS custom properties — light mode defaults */
+/* ================================================================
+   app.css — layout, spacing, and structural styles for melayerka.com
+
+   Typography (font-*, line-height, color, text-*) lives in
+   typography.css. This file handles everything else.
+   ================================================================ */
+
+
+/* ----------------------------------------------------------------
+   Layout and background colour tokens
+   ---------------------------------------------------------------- */
 :root {
-  --bg:         #ffffff;
-  --text:       #000000;
-  --link:       #000000;
-  --link-hover: #ff0000;
-  --body-margin-mobile: 50px 20px 100px 20px;
+  --bg:                #ffffff;
+  --body-margin-mobile: 15px 20px 100px 20px;
 }
 
-/* Dark mode overrides — applied when body.dark is set */
 body.dark {
-  --bg:         #212121;
-  --text:       #bab6b6;
-  --link:       #bab6b6;
-  --body-margin-mobile: 100px 50px 90px 50px;
+  --bg:                #212121;
 }
 
-/*** Grid ***/
-/*** Style ***/
+
+/* ----------------------------------------------------------------
+   Navigation menu structure
+   ---------------------------------------------------------------- */
 ul.menu {
   list-style-type: none;
   margin-left: 0;
   padding-left: 0;
-  font-size: 35.7px; }
-  @media only screen and (min-width: 64.063em) {
-    ul.menu {
-      font-size: 19.8px; } }
-  ul.menu ul {
-    list-style-type: none;
-    padding-left: 2px;
-    font-size: 19.8px; }
-  ul.menu a {
-    color: var(--link);
-    text-decoration: none; }
-    ul.menu a.active {
-      text-decoration: underline; }
-  ul.menu a:hover {
-    color: var(--link-hover);
-    font-size: inherit; }
-  ul.menu .series {
-    font-size: 19.8px;
-    font-weight: regular; }
+}
+ul.menu ul {
+  list-style-type: none;
+  padding-left: 2px;
+}
 
 .menu-trigger {
-  padding-bottom: 66px;
-  line-height: 58.2px;
-  font-size: 58.2px;
-  text-align: right;
-  padding-left: 40px; }
+  padding-bottom: 20px;
+  padding-left: 40px;
+}
 
+
+/* ----------------------------------------------------------------
+   By year gallery — list structure and thumbnail grid
+   ---------------------------------------------------------------- */
 ol.gallery {
   margin-left: 0;
   list-style-type: none;
-  font-size: 58.2px; }
-  @media only screen and (min-width: 64.063em) {
-    ol.gallery span.year {
-      display: block;
-      font-size: 19.8px;
-      line-height: 35.7px;
-      font-weight: bold;
-      padding-bottom: calc(42px - 19px); } }
-  @media only screen and (min-width: 64.063em) {
-    ol.gallery li:not(:first-child) {
-      margin-top: 50px; } }
+}
+@media only screen and (min-width: 64.063em) {
+  ol.gallery span.year {
+    display: block;
+    padding-bottom: calc(42px - 19px);
+  }
+  ol.gallery li:not(:first-child) {
+    margin-top: 50px;
+  }
+}
 
 .gallery-images {
-  display: none; }
-  @media only screen and (min-width: 64.063em) {
-    .gallery-images {
-      display: block; } }
-  .gallery-images img {
-    height: 150px; }
-  .gallery-images a {
-    display: inline-block;
-    margin-bottom: 40px; }
-    .gallery-images a:not(:last-child) {
-      margin-right: 35px; }
-
-.by-series p {
-  font-size: 19.8px; }
-.by-series section h1 {
-  font-size: 35.7px;
-  line-height: 35.7px;
-  padding-bottom: 27px;
-  font-family: inherit;
-  font-weight: bold; }
-.by-series section h2 {
-  font-size: 27.8px;
-  line-height: 27.8px;
-  padding-top: 50px;
-  padding-bottom: calc(42px - 19px);
-  font-family: inherit;
-  font-weight: bold; }
-
-.year {
-  font-size: 58.2px;
-  padding-bottom: calc(90px - 52px);
-  line-height: 58.2px; }
-  @media only screen and (min-width: 64.063em) {
-    .year {
-      font-size: 25.1px;
-      line-height: 35.7px;
-      padding-bottom: calc(42px - 19px);
-      font-weight: bolder; }
-      .year .description {
-        font-size: 25.1px; } }
-
-.navigation-controls:not(.dark-button-enabled) .next,
-.year ~ div.cell {
-  width: 150px; }
-
-.painting.menu-wrapper .menu-trigger {
-  padding-bottom: calc(90px - 52px); }
-
-.navigation-controls {
-  font-size: 68.8px;
-  line-height: 68.8px;
-  padding-bottom: calc(65px - 52px); }
-  .navigation-controls .next {
-    text-align: right; }
-  .navigation-controls a {
+  display: none;
+}
+@media only screen and (min-width: 64.063em) {
+  .gallery-images {
     display: block;
-    width: 100%;
-    color: var(--link); }
-  .navigation-controls a:hover {
-    transition: color .4s;
-    color: var(--link-hover); }
+  }
+}
+.gallery-images img {
+  height: 150px;
+}
+.gallery-images a {
+  display: inline-block;
+  margin-bottom: 40px;
+}
+.gallery-images a:not(:last-child) {
+  margin-right: 35px;
+}
 
+
+/* ----------------------------------------------------------------
+   By series gallery — section spacing
+   ---------------------------------------------------------------- */
+.by-series section h2 {
+  padding-bottom: calc(42px - 19px);
+}
+.by-series section:not(:first-child) h2 {
+  padding-top: 50px;
+}
+
+
+/* ----------------------------------------------------------------
+   Artwork title cell spacing
+   ---------------------------------------------------------------- */
+.year {
+  padding-bottom: calc(90px - 52px);
+}
+@media only screen and (min-width: 64.063em) {
+  .year {
+    padding-bottom: calc(42px - 19px);
+  }
+}
+
+.navigation-controls:not(.dark-button-enabled) .next {
+  width: 150px;
+}
+
+
+/* ----------------------------------------------------------------
+   Artwork prev/next navigation controls
+   ---------------------------------------------------------------- */
+.navigation-controls {
+  padding-bottom: calc(65px - 52px);
+}
+.navigation-controls a {
+  display: block;
+  width: 100%;
+}
+
+
+/* ----------------------------------------------------------------
+   Artwork painting image and caption
+   ---------------------------------------------------------------- */
 .painting {
-  margin-bottom: 80px; }
-  @media only screen and (min-width: 64.063em) {
-    .painting {
-      margin-bottom: 60px; } }
-  .painting, .painting img {
-    width: 100%;
-    max-width: 540px; }
-    @media only screen and (min-width: 64.063em) {
-      .painting, .painting img {
-        max-width: 630px; } }
+  margin-bottom: 80px;
+}
+@media only screen and (min-width: 64.063em) {
+  .painting {
+    margin-bottom: 60px;
+  }
+}
+.painting,
+.painting img {
+  width: 100%;
+  max-width: 540px;
+}
+@media only screen and (min-width: 64.063em) {
+  .painting,
   .painting img {
-    margin-bottom: 65px; }
-    @media only screen and (min-width: 64.063em) {
-      .painting img {
-        margin-bottom: 0px; } }
-  .painting p {
-    font-size: 31.7px; }
+    max-width: 630px;
+  }
+}
+.painting img {
+  margin-bottom: 65px;
+}
+@media only screen and (min-width: 64.063em) {
+  .painting img {
+    margin-bottom: 0px;
+  }
+}
 
-/* "See in dark / See in light" toggle button */
+
+/* ----------------------------------------------------------------
+   "See in dark / See in light" toggle button structure
+   ---------------------------------------------------------------- */
 .toggle-dark {
   vertical-align: middle;
   border-style: none;
   padding: 0;
   background-color: transparent;
   margin: 0;
-  color: var(--link);
   width: 100%;
-  font-size: 68.8px;
-  line-height: 68.8px; }
-  .toggle-dark:hover, .toggle-dark:focus, .toggle-dark:active {
-    background-color: transparent;
-    outline: none;
-    color: var(--link-hover); }
-  @media only screen and (min-width: 64.063em) {
-    .toggle-dark {
-      font-size: 19.8px;
-      line-height: 25.1px; } }
+}
+.toggle-dark:hover,
+.toggle-dark:focus,
+.toggle-dark:active {
+  background-color: transparent;
+  outline: none;
+}
 
+
+/* ----------------------------------------------------------------
+   Exhibition pages — header and image spacing
+   ---------------------------------------------------------------- */
 .showcase header {
-  margin-bottom: 21px; }
-  @media only screen and (min-width: 64.063em) {
-    .showcase header {
-      margin-bottom: 23px; } }
-  .showcase header h1 {
-    font-size: 35.7px;
-    font-family: inherit;
-    font-weight: bold; }
-  .showcase header h2 {
-    font-size: 27.8px;
-    font-family: inherit; }
-  .showcase header h3 {
-    font-size: 17.2px;
-    font-family: inherit;
-    padding-bottom: 60px;
-    padding-top: 12px; }
-  .showcase header h4 {
-    font-size: 17.2px;
-    font-family: inherit;
-    font-weight: bolder; }
-  .showcase header h5 {
-    font-size: 17.2px;
-    font-family: inherit;
-    padding-bottom: 5px; }
-  .showcase header h6 {
-    font-size: 19.8px;
-    font-weight: bold;
-    font-family: inherit;
-    padding-top: 55px; }
-  @media only screen and (min-width: 64.063em) {
-    .showcase header h1 {
-      font-size: 19.8px;
-      font-family: inherit;
-      font-weight: bold; }
-    .showcase header h2 {
-      font-size: 19.8px;
-      font-family: inherit; }
-    .showcase header h4 {
-      font-size: 19.8px;
-      font-family: inherit;
-      font-weight: bold; }
-    .showcase header h5 {
-      font-size: 19.8px;
-      font-family: inherit; }
-    .showcase header h6 {
-      font-size: 19.8px;
-      font-family: inherit;
-      padding-top: 0px; } }
-
+  margin-bottom: 21px;
+}
+@media only screen and (min-width: 64.063em) {
+  .showcase header {
+    margin-bottom: 23px;
+  }
+}
+.showcase header h3 {
+  padding-top: 12px;
+}
+.showcase header h3:last-of-type {
+  padding-bottom: 60px;
+}
+.showcase header h5 {
+  padding-bottom: 5px;
+}
 .showcase img {
   margin-bottom: 60px;
   width: 100%;
-  max-width: 540px; }
-  @media only screen and (min-width: 64.063em) {
-    .showcase img {
-      max-width: 630px; } }
+  max-width: 540px;
+}
+@media only screen and (min-width: 64.063em) {
+  .showcase img {
+    max-width: 630px;
+  }
+}
 .showcase .bottom-menu {
-  margin-top: 25px; }
-  .showcase .bottom-menu .menu-trigger {
-    padding-bottom: calc(80px - 52px); }
+  margin-top: 25px;
+}
+.showcase .bottom-menu .menu-trigger {
+  padding-bottom: calc(80px - 52px);
+}
 
-.text .title {
-  padding-bottom: calc(90px - 52px); }
-  .text .title h1 {
-    font-size: 58.2px;
-    font-family: inherit;
-    line-height: 68.8px; }
-.text .title ~ div.cell {
-  width: 150px; }
-.text p {
-  font-size: 17.2px; }
-  @media only screen and (min-width: 64.063em) {
-    .text p {
-      font-size: 19.8px; } }
 
-body, html {
-  height: auto; }
-
+/* ----------------------------------------------------------------
+   Body and root layout
+   ---------------------------------------------------------------- */
 body {
-  font-family: "Finlandica Headline", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 200;
-  font-style: normal;
-  font-size: 17.2px;
-  line-height: 175%;
   transition: background-color .5s ease;
   margin: var(--body-margin-mobile);
   background-color: var(--bg);
-  color: var(--text);
-  -webkit-text-size-adjust: 100%; }
-  @media only screen and (min-width: 64.063em) {
-    body {
-      margin: 62px 50px 90px 50px; } }
+}
+@media only screen and (min-width: 64.063em) {
+  body {
+    margin: 62px 50px 90px 50px;
+  }
+}
 
-p {
-  font-weight: 100; }
 
+/* ----------------------------------------------------------------
+   Utility: hide year-nav links when in series context (and vice versa)
+   ---------------------------------------------------------------- */
 .nav-hidden {
-  display: none !important; }
+  display: none !important;
+}
 
-a {
-  text-decoration: none;
-  color: var(--link);
-  transition: color .4s; }
-  a:hover {
-    transition: color .4s;
-    color: var(--link-hover); }
 
+/* ----------------------------------------------------------------
+   Desktop sidebar menu wrapper
+   ---------------------------------------------------------------- */
 @media only screen {
   main > .menu-wrapper {
-    display: none; } }
+    display: none;
+  }
+}
 @media only screen and (min-width: 64.063em) {
   main > .menu-wrapper {
     width: 270px;
     display: inline-block;
-    vertical-align: top; } }
+    vertical-align: top;
+  }
+}
 
+
+/* ----------------------------------------------------------------
+   Site title and main content column
+   ---------------------------------------------------------------- */
 .site-title {
-  font-size: 35.7px;
   display: block;
-  padding-bottom: calc(63px - 30px); }
+  padding-bottom: calc(63px - 30px);
+}
 
 .main-content {
   max-width: 540px;
-  width: 100%; }
-  @media only screen and (min-width: 40.063em) and (max-width: 64em) {
-    .main-content {
-      margin: auto; } }
-  @media only screen and (min-width: 64.063em) {
-    .main-content {
-      max-width: 630px;
-      display: inline-block;
-      vertical-align: top;
-      margin-top: 63px; } }
+  width: 100%;
+}
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+  .main-content {
+    margin: auto;
+  }
+}
+@media only screen and (min-width: 64.063em) {
+  .main-content {
+    max-width: 630px;
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 63px;
+  }
+}
+
+
+/* ----------------------------------------------------------------
+   Homepage layout
+   ---------------------------------------------------------------- */
+@media only screen and (max-width: 64em) {
+  .index-feature {
+    margin-top: 50px;
+  }
+}
 
 .index-title {
   display: block;
   padding-bottom: calc(110px - 52px);
-  line-height: 68.8px;
-  font-size: 55.5px; }
-
-.index-menu {
-  font-size: 58.2px; }
+}
 
 @media only screen {
   .index-gallery {
-    display: none; } }
+    display: none;
+  }
+}
 @media only screen and (min-width: 64.063em) {
   .index-gallery {
-    display: block; } }
+    display: block;
+  }
+}
 
-.inline {
-  display: inline-block; }
-
-.inline.bigger {
-  width: calc(100% - 155px); }
-
-.inline.smaller {
-  width: 150px; }
 
 .table-layout {
   display: table;
-  width: 100%; }
-  .table-layout .cell {
-    display: table-cell; }
+  width: 100%;
+}
+.table-layout .cell {
+  display: table-cell;
+}

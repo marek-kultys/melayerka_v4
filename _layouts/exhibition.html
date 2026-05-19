@@ -7,26 +7,27 @@ layout: default
     <div class="menu-trigger hide-for-large-up"><a href="{{ site.baseurl }}/exhibitions.html">Back</a></div>
     <section class="showcase">
       <header>
-        <h4>{{ page.title }}</h4>
-        {% if page.type %}<h5>{{ page.type }}</h5>{% endif %}
+        <h1>{{ page.title }}</h1>
+        {% if page.type %}<h3>{{ page.type }}</h3>{% endif %}
         {% if page.venue %}
           {% if page.venue_url %}
-            <h5><a href="{{ page.venue_url }}" target="_blank">{{ page.venue }}<br>{{ page.dates }}</a></h5>
+            <h3><a href="{{ page.venue_url }}" target="_blank">{{ page.venue }}</a></h3>
+            <h3><a href="{{ page.venue_url }}" target="_blank">{{ page.dates }}</a></h3>
           {% else %}
-            <h5>{{ page.venue }}<br>{{ page.dates }}</h5>
+            <h3>{{ page.venue }}</h3>
+            <h3>{{ page.dates }}</h3>
           {% endif %}
         {% endif %}
-        {% if page.description %}<h5>{{ page.description }}</h5>{% endif %}
+        {% if page.description %}<h3>{{ page.description }}</h3>{% endif %}
         {% if page.links %}
           {% for link in page.links %}
-            <h5><a href="{{ link.url }}" target="_blank">{{ link.text }}</a></h5>
+            <h3><a href="{{ link.url }}" target="_blank">{{ link.text }}</a></h3>
           {% endfor %}
         {% endif %}
       </header>
       {% if page.images %}
         {% for img in page.images %}
           <img src="{{ site.baseurl }}/images/{{ img.file }}">
-          <br>
         {% endfor %}
       {% else %}
         {{ content }}

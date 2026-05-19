@@ -1,0 +1,292 @@
+/* ================================================================
+   typography.css — all type styles for melayerka.com
+
+   Covers: font-family, font-size, font-weight, font-style,
+           line-height, color, text-decoration, text-align,
+           and the CSS custom properties that drive colours.
+
+   Load order: after normalize.css and foundation.css,
+               before app.css (see _includes/head.html)
+   ================================================================ */
+
+
+/* ----------------------------------------------------------------
+   Colour tokens
+   Used on every page via body text, links, and dark mode
+   ---------------------------------------------------------------- */
+:root {
+  --text:       #000000;
+  --link:       #000000;
+  --link-hover: #ff0000;
+}
+
+body.dark {
+  --text: #bab6b6;
+  --link: #bab6b6;
+}
+
+
+/* ----------------------------------------------------------------
+   Base body type — all pages
+   ---------------------------------------------------------------- */
+body {
+  font-family: "Finlandica Headline", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 150%;
+  color: var(--text);
+  -webkit-text-size-adjust: 100%;
+}
+
+
+/* ----------------------------------------------------------------
+   Base paragraph — all pages
+   ---------------------------------------------------------------- */
+p {
+  font-weight: 100;
+}
+
+
+/* ----------------------------------------------------------------
+   Base links — all pages
+   ---------------------------------------------------------------- */
+a {
+  text-decoration: none;
+  color: var(--link);
+  transition: color .4s;
+}
+a:hover {
+  transition: color .4s;
+  color: var(--link-hover);
+}
+
+
+/* ----------------------------------------------------------------
+   Site title ("Mela Yerka") — desktop sidebar, all pages
+   ---------------------------------------------------------------- */
+.site-title {
+  font-size: 36px;
+}
+
+
+/* ----------------------------------------------------------------
+   Navigation menu — desktop sidebar and mobile overlay
+   _includes/nav.html, all pages
+   ---------------------------------------------------------------- */
+ul.menu {
+  font-size: 36px;
+}
+@media only screen and (min-width: 64.063em) {
+  ul.menu {
+    font-size: 21px;
+  }
+}
+ul.menu ul {
+  font-size: 21px;
+}
+ul.menu a {
+  color: var(--link);
+  text-decoration: none;
+}
+ul.menu a.active {
+  text-decoration: underline;
+}
+ul.menu a:hover {
+  color: var(--link-hover);
+  font-size: inherit;
+}
+ul.menu .series {
+  font-size: 21px;
+  font-weight: regular;
+}
+
+
+/* ----------------------------------------------------------------
+   Mobile "Menu" trigger link — artwork and gallery pages
+   _layouts/artwork.html, gallery-series.html, gallery-year.html
+   ---------------------------------------------------------------- */
+.menu-trigger { /* Menu button - mobile only */
+  font-size: 32px;
+  line-height: 32px;
+  text-align: right;
+}
+
+
+/* ----------------------------------------------------------------
+   Artwork title and metadata line (dimensions, medium, year)
+   _layouts/artwork.html
+   ---------------------------------------------------------------- */
+.year { /* Artwork title - mobile only */
+  font-size: 32px;
+  line-height: 32px;
+  font-weight: bold;
+}
+@media only screen and (min-width: 64.063em) { /* Artwork title - desktop only */
+  .year {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  .year .description { /* Artwork metadata - desktop only */
+    font-size: 21px;
+  }
+}
+
+
+/* ----------------------------------------------------------------
+   Artwork description below image — mobile only
+   _layouts/artwork.html
+   ---------------------------------------------------------------- */
+.painting p {
+  font-size: 21px;
+}
+
+
+/* ----------------------------------------------------------------
+   Prev/next navigation chevrons (< >)
+   _layouts/artwork.html
+   ---------------------------------------------------------------- */
+.navigation-controls {
+  font-size: 42px;
+  line-height: 42px;
+}
+.navigation-controls .next {
+  text-align: right;
+}
+.navigation-controls a {
+  color: var(--link);
+}
+.navigation-controls a:hover {
+  transition: color .4s;
+  color: var(--link-hover);
+}
+
+
+/* ----------------------------------------------------------------
+   "See in dark / See in light" toggle button
+   _layouts/artwork.html — Mars series pages only
+   ---------------------------------------------------------------- */
+.toggle-dark {
+  color: var(--link);
+  font-size: 24px;
+  line-height: 24px;
+}
+.toggle-dark:hover,
+.toggle-dark:focus,
+.toggle-dark:active {
+  color: var(--link-hover);
+}
+@media only screen and (min-width: 64.063em) {
+  .toggle-dark {
+    font-size: 21px;
+    line-height: 24px;
+  }
+}
+
+
+/* ----------------------------------------------------------------
+   By year gallery — year headings and work list
+   _layouts/gallery-year.html, by_year.html
+   ---------------------------------------------------------------- */
+ol.gallery {
+  font-size: 56px;
+}
+@media only screen and (min-width: 64.063em) {
+  ol.gallery span.year {
+    font-size: 21px;
+    line-height: 36px;
+    font-weight: bold;
+  }
+}
+
+
+/* ----------------------------------------------------------------
+   By series gallery — series headings and descriptions
+   _layouts/gallery-series.html, by_series.html
+   ---------------------------------------------------------------- */
+.by-series p { /* Series descriptions, desktop only */
+  font-size: 21px; 
+}
+.by-series section h2 { /* Series headings */
+  font-size: 36px;
+  line-height: 36px;
+  font-family: inherit;
+  font-weight: bold;
+}
+
+
+/* ----------------------------------------------------------------
+   Exhibition pages — header text hierarchy
+   _layouts/exhibition.html, _layouts/mini-series.html,
+   _exhibitions/show_*.md
+   ---------------------------------------------------------------- */
+.showcase header h1 { /* Series name - mobile only */
+  font-size: 36px;
+  font-family: inherit;
+  font-weight: bold;
+}
+.showcase header h2 { /* Series year - mobile only */
+  font-size: 28px;
+  font-family: inherit;
+}
+.showcase header h3 { /* Series summary - mobile only */
+  font-size: 21px;
+  font-family: inherit;
+}
+.showcase header h4 { /* Artwork titles — mobile only */
+  font-size: 28px;
+  font-family: inherit;
+  font-weight: bolder;
+}
+.showcase header h5 { /* Artwork metadata — mobile only */
+  font-size: 21px;
+  font-family: inherit;
+}
+@media only screen and (min-width: 64.063em) {
+  .showcase header h1 {
+    font-size: 36px;
+    font-family: inherit;
+    font-weight: bold;
+  }
+  .showcase header h2 {
+    font-size: 21px;
+    font-family: inherit;
+  }
+  .showcase header h4 { /* Artwork titles — _layouts/mini-series.html */
+    font-size: 21px;
+    font-family: inherit;
+    font-weight: bold;
+  }
+  .showcase header h5 { /* Artwork metadata — _layouts/mini-series.html */
+    font-size: 18px;
+    font-family: inherit;
+  }
+}
+
+
+/* ----------------------------------------------------------------
+   Text / prose pages — body copy
+   _layouts/text.html, _pages/bio.md, statement.md, contact.md
+   ---------------------------------------------------------------- */
+.text p {
+  font-size: 18px;
+}
+@media only screen and (min-width: 64.063em) {
+  .text p {
+    font-size: 21px;
+  }
+}
+
+
+/* ----------------------------------------------------------------
+   Homepage title and works menu
+   _pages/index.md, _layouts/home.html
+   ---------------------------------------------------------------- */
+.index-title {
+  font-size: 48px;  /* Mela Yerka, mobile */
+  line-height: 48px;
+}
+.index-menu {
+  font-size: 48px;
+}

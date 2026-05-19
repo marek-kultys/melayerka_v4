@@ -1,5 +1,5 @@
 title: Mela Yerka
-baseurl: /art
+baseurl: ""
 url: https://melayerka.com
 
 collections:
@@ -35,27 +35,4 @@ exclude:
   - Gemfile.lock
   - PLANNING.md
   - README.md
-  - templates/
-  - design/
-  - dist/
-  - _notes/
-  - images-NONoptimised/
   - vendor/
-  - "*.map"
-  - extract_artworks.py
-  # Legacy static HTML files superseded by Jekyll collection output
-  - "0[0-9]_*.html"
-  - "show_*.html"
-  - gallery.html
-  - showcase.html
-  - bio.html
-  - statement.html
-  - contact.html
-  - exhibitions.html
-  - links.html
-  - index.html
-  - README.html
-  - style.new.css
-  - app-dark.css
-  - app-dark.css.map
-  - google565ae11e075e8b6a.html

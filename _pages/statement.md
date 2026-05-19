@@ -22,4 +22,3 @@ permalink: /statement.html
   Currently, I am working on a new series exploring the material value that different human cultures assigned to various commodities over the course of history, for example: gold, sugar, spices, cotton, guano, or tulip bulbs.
 </p>
 <p>⚖️</p>
-<p>Mela collaborates with <a href="http://www.mariastenfors.com/artists/mela-yerka/">Maria Stenfors</a>.</p>

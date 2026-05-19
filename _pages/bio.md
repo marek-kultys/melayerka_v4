@@ -7,11 +7,10 @@ permalink: /bio.html
   of Art &amp; Design in London, having previously studied at the
   Academy of Fine Arts in Warsaw, Poland. Mela is the winner
   of the Cass Art Painting Prize 2011. Polish-born, she now
-  lives and works in East London. Mela exhibited in solo and group
+  lives and works in St Albans, UK. Mela exhibited in solo and group
   shows, art fairs, and collaborated in art projects in the UK, Poland,
   Sweden, Italy, Austria, Germany, Romania, and the Netherlands.
 </p>
-<p>Mela collaborates with <a href="http://www.mariastenfors.com/artists/mela-yerka/">Maria Stenfors</a>.<br><br></p>
 
 <p><b>SOLO SHOWS</b></p>
 <p>
