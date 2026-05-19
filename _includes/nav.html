@@ -1,0 +1,24 @@
+<div class="menu-wrapper">
+  <span class="site-title"><a href="{{ site.baseurl }}/">Mela Yerka</a></span>
+  <ul class="menu">
+    <li>Works
+      <ul class="show-for-large-up">
+        <li><a href="{{ site.baseurl }}/by_series.html"{% if page.url == '/by_series.html' %} class="active"{% endif %}>by series</a></li>
+        <li><a id="menu-item-by-year" href="{{ site.baseurl }}/by_year.html"{% if page.url == '/by_year.html' %} class="active"{% endif %}>by year</a></li>
+      </ul>
+      <ul class="hide-for-large-up series">
+        <li><a href="{{ site.baseurl }}/mini-series_Mars.html">Mars</a></li>
+        <li><a href="{{ site.baseurl }}/mini-series_Feral.html">Feral Children</a></li>
+        <li><a href="{{ site.baseurl }}/mini-series_Women.html">19th Century Women</a></li>
+        <li><a href="{{ site.baseurl }}/mini-series_Grimm.html">Grimm Tales</a></li>
+        <li><a href="{{ site.baseurl }}/mini-series_Dead.html">Dead</a></li>
+        <li><a href="{{ site.baseurl }}/mini-series_War.html">Beautiful Painting of War</a></li>
+      </ul>
+    </li>
+    <li><a href="{{ site.baseurl }}/bio.html"{% if page.url == '/bio.html' %} class="active"{% endif %}>Bio</a></li>
+    <li><a href="{{ site.baseurl }}/statement.html"{% if page.url == '/statement.html' %} class="active"{% endif %}>Statement</a></li>
+    <li><a href="{{ site.baseurl }}/exhibitions.html"{% if page.url contains '/exhibitions' or page.layout == 'exhibition' %} class="active"{% endif %}>Exhibitions</a></li>
+    <li><a href="https://www.instagram.com/melayerka/" target="_blank">Instagram</a></li>
+    <li><a href="{{ site.baseurl }}/contact.html"{% if page.url == '/contact.html' %} class="active"{% endif %}>Contact</a></li>
+  </ul>
+</div>

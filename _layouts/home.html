@@ -1,0 +1,32 @@
+---
+layout: default
+---
+<main>
+  {% include nav.html %}
+  <div class="main-content">
+    <div class="hide-for-large-up">
+      <span class="index-title"><a href="{{ site.baseurl }}/">Mela Yerka</a></span>
+      <div class="index-menu"></div>
+      <ul class="menu">
+        <li>Works
+          <ul class="hide-for-large-up series">
+            <li><a href="{{ site.baseurl }}/mini-series_Mars.html">Mars</a></li>
+            <li><a href="{{ site.baseurl }}/mini-series_Feral.html">Feral Children</a></li>
+            <li><a href="{{ site.baseurl }}/mini-series_Women.html">19th Century Women</a></li>
+            <li><a href="{{ site.baseurl }}/mini-series_Grimm.html">Grimm Tales</a></li>
+            <li><a href="{{ site.baseurl }}/mini-series_Dead.html">Dead</a></li>
+            <li><a href="{{ site.baseurl }}/mini-series_War.html">Beautiful Painting of War</a></li>
+          </ul>
+        </li>
+        <li><a href="{{ site.baseurl }}/bio.html">Bio</a></li>
+        <li><a href="{{ site.baseurl }}/statement.html">Statement</a></li>
+        <li><a href="{{ site.baseurl }}/exhibitions.html">Exhibitions</a></li>
+        <li><a href="https://www.instagram.com/melayerka/" target="_blank">Instagram</a></li>
+        <li><a href="{{ site.baseurl }}/contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="index-feature">{{ content }}</div>
+    {% include footer.html %}
+    <br>
+  </div>
+</main>

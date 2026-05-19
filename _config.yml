@@ -1,0 +1,38 @@
+title: Mela Yerka
+baseurl: ""
+url: https://melayerka.com
+
+collections:
+  artworks:
+    output: true
+    sort_by: year
+    permalink: /:name.html
+  exhibitions:
+    output: true
+    permalink: /:name.html
+  pages:
+    output: true
+
+defaults:
+  - scope:
+      path: "_artworks"
+      type: artworks
+    values:
+      layout: artwork
+  - scope:
+      path: "_exhibitions"
+      type: exhibitions
+    values:
+      layout: exhibition
+  - scope:
+      path: "_pages"
+      type: pages
+    values:
+      layout: text
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - PLANNING.md
+  - README.md
+  - vendor/
